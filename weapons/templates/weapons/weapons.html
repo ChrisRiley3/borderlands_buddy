@@ -25,13 +25,13 @@
 		<div class="row">
 			{% for weapon in weapons %}
 			<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-				<div class="card h-100 border-1 border-black">
+				<div class="card h-100 border-black">
 					{% if weapon.image %}
-					<a href="">
+					<a href="{% url 'weapon_detail' weapon.id %}">
 						<img class="card-img-top img-fluid" src="{{ weapon.image.url }}" alt="{{ weapon.name }}">
                                 </a>
 						{% else %}
-						<a href="">
+						<a href="{% url 'weapon_detail' weapon.id %}">
 							<img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ weapon.name }}">
                                 </a>
 							{% endif %}

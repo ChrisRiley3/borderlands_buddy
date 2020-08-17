@@ -5,6 +5,7 @@ html {
 
 body {
   background: url("/media/main-bg-img.jpg") no-repeat center center fixed;
+  background-position-y: 125px;
   background-size: cover;
   font-family: "Raleway", sans-serif;
   height: calc(100vh - 164px);
@@ -62,7 +63,7 @@ body {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(255, 183, 49, 0.7);
+  background: rgba(255, 183, 49, 0.8);
   z-index: -1;
 }
 
@@ -90,6 +91,18 @@ body {
   }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 116px;
+  }
+
+  body {
+    height: calc(100vh - 116px);
+    background-position-y: 70px;
+  }
+}
+
 /*............................................................................... Custom css */
 
 hr {
@@ -99,23 +112,43 @@ hr {
 .main-text {
   font-weight: 700;
   letter-spacing: 2px;
-  border: 1px solid rgba(255, 183, 49, 0.7);
+  border: 1px solid #000;
   border-radius: 5px;
-  background-color: rgba(255, 183, 49, 0.7);
+  background-color: rgba(255, 183, 49, 0.6);
   color: red;
 }
 
 .main-header {
-  background-color: rgba(255, 183, 49, 0.7);
+  background-color: rgba(255, 183, 49);
   font-weight: 700;
   letter-spacing: 2px;
+  border-bottom: 1px solid #000;
 }
 
-.custom-dropdown {
+.custom-dropdown,
+.mobile-header {
   background-color: rgb(255, 183, 49);
+}
+
+.dropdown-item {
+  font-weight: bold;
+  color: #000 !important;
 }
 
 .dropdown-item:hover {
   background-color: #000 !important;
   color: #fff !important;
+}
+
+.weapon-details-container {
+  letter-spacing: 2px;
+}
+
+.card-body,
+.card-footer {
+  letter-spacing: 2px;
+}
+
+.mobile-header-font {
+  font-size: 11px;
 }
