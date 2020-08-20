@@ -5,7 +5,6 @@
                 All Weapons
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Rarity</a>
                 <a href="" class="dropdown-item">By Manufacture</a>
                 <a href="" class="dropdown-item">By Weapon Type</a>
                 <a href="{% url 'weapons' %}" class="dropdown-item">All Weapons</a>
@@ -17,13 +16,13 @@
                 Ledgendary
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Pistols</a>
-                <a href="" class="dropdown-item">Assault Rifle</a>
-                <a href="" class="dropdown-item">Sniper Rifles</a>
-                <a href="" class="dropdown-item">SMG's</a>
-                <a href="" class="dropdown-item">Shotguns</a>
-                <a href="" class="dropdown-item">Launchers</a>
-                <a href="" class="dropdown-item">All Weapons</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_pistols" class="dropdown-item">Pistols</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_assault_rifles" class="dropdown-item">Assault Rifle</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_sniper_rifles" class="dropdown-item">Sniper Rifles</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_smgs" class="dropdown-item">SMG's</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_shotguns" class="dropdown-item">Shotguns</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_launchers" class="dropdown-item">Launchers</a>
+                <a href="{% url 'weapons' %}?category=ledgendary_pistols,ledgendary_assault_rifles,ledgendary_sniper_rifles,ledgendary_smg,ledgendary_shotguns,ledgendary_launchers" class="dropdown-item">All Weapons</a>
             </div>
         </li>
 
@@ -32,13 +31,13 @@
                 Epic
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Pistols</a>
-                <a href="" class="dropdown-item">Assult Rifle</a>
-                <a href="" class="dropdown-item">Sniper Rifles</a>
-                <a href="" class="dropdown-item">SMG's</a>
-                <a href="" class="dropdown-item">Shotguns</a>
-                <a href="" class="dropdown-item">Launchers</a>
-                <a href="" class="dropdown-item">All Weapons</a>
+                <a href="{% url 'weapons' %}?category=epic_pistols" class="dropdown-item">Pistols</a>
+                <a href="{% url 'weapons' %}?category=epic_assault_rifles" class="dropdown-item">Assault Rifle</a>
+                <a href="{% url 'weapons' %}?category=epic_sniper_rifles" class="dropdown-item">Sniper Rifles</a>
+                <a href="{% url 'weapons' %}?category=epic_smgs" class="dropdown-item">SMG's</a>
+                <a href="{% url 'weapons' %}?category=epic_shotguns" class="dropdown-item">Shotguns</a>
+                <a href="{% url 'weapons' %}?category=epic_launchers" class="dropdown-item">Launchers</a>
+                <a href="{% url 'weapons' %}?category=epic_pistols,epic_assault_rifles,epic_sniper_rifles,epic_smg,epic_shotguns,epic_launchers" class="dropdown-item">All Weapons</a>
             </div>
         </li>
 
@@ -47,13 +46,13 @@
                 Rare
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Pistols</a>
-                <a href="" class="dropdown-item">Assult Rifle</a>
-                <a href="" class="dropdown-item">Sniper Rifles</a>
-                <a href="" class="dropdown-item">SMG's</a>
-                <a href="" class="dropdown-item">Shotguns</a>
-                <a href="" class="dropdown-item">Launchers</a>
-                <a href="" class="dropdown-item">All Weapons</a>
+                <a href="{% url 'weapons' %}?category=rare_pistols" class="dropdown-item">Pistols</a>
+                <a href="{% url 'weapons' %}?category=rare_assault_rifles" class="dropdown-item">Assault Rifle</a>
+                <a href="{% url 'weapons' %}?category=rare_sniper_rifles" class="dropdown-item">Sniper Rifles</a>
+                <a href="{% url 'weapons' %}?category=rare_smgs" class="dropdown-item">SMG's</a>
+                <a href="{% url 'weapons' %}?category=rare_shotguns" class="dropdown-item">Shotguns</a>
+                <a href="{% url 'weapons' %}?category=rare_launchers" class="dropdown-item">Launchers</a>
+                <a href="{% url 'weapons' %}?category=rare_pistols,rare_assault_rifles,rare_sniper_rifles,rare_smg,rare_shotguns,rare_launchers" class="dropdown-item">All Weapons</a>
             </div>
         </li>
     </ul>
