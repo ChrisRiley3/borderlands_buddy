@@ -5,8 +5,7 @@
                 All Weapons
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Manufacture</a>
-                <a href="" class="dropdown-item">By Weapon Type</a>
+                <a href="{% url 'weapons' %}?sort=price&direnction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'weapons' %}" class="dropdown-item">All Weapons</a>
             </div>
         </li>
