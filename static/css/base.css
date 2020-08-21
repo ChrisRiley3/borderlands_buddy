@@ -45,7 +45,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-  background: #222;
+  background: #111;
   color: white;
 }
 
@@ -151,4 +151,9 @@ hr {
 
 .mobile-header-font {
   font-size: 11px;
+}
+
+.category-btn > span:hover {
+  background-color: #000 !important;
+  color: #fff !important;
 }

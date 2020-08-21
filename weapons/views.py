@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Weapon, Category
+from django.db.models.functions import Lower
 
 
 def all_weapons(request):
@@ -12,13 +13,15 @@ def all_weapons(request):
     categories = None
     sort = None
     direction = None
+    manufacture = None
 
     if 'sort' in request.GET:
         sortkey = request.GET['sort']
         sort = sortkey
-        if sortkey == 'name':
+        if sortkey == 'name, manufacture':
             sortkey = 'lower_name'
             weapons = weapons.annotate(lower_name=Lower('name'))
+            manufacture = manufacture.annotate(lower_name=Lower('manufacture'))
         if 'direction' in request.GET:
             direction = request.GET['direction']
             if direction == 'desc':
