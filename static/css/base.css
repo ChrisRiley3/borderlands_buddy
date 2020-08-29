@@ -157,3 +157,7 @@ hr {
   background-color: #000 !important;
   color: #fff !important;
 }
+
+.bag-button:hover {
+    transform: scale(1.1);
+}
