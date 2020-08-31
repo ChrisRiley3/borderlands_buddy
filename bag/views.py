@@ -1,12 +1,11 @@
 from django.shortcuts import render, redirect
 
-# Create your views here.
-
 
 def view_bag(request):
     """ A view to render the shopping bag page """
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified weapon to the shopping bag """
@@ -21,5 +20,4 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    print(request.session['bag'])
     return redirect(redirect_url)
