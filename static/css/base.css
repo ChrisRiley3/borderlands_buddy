@@ -68,7 +68,12 @@ body {
 }
 
 .btn-outline-black {
-    border: 1px solid #000;
+  border: 1px solid #000;
+}
+
+.update-link,
+.remove-item {
+  cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
@@ -163,5 +168,5 @@ hr {
 }
 
 .bag-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
