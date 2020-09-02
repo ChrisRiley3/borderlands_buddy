@@ -1,4 +1,8 @@
-{% extends "base.html" %} {% load static %} {% block page_header %}
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block page_header %}
 <div class="container header-container">
 	<div class="row">
 		<div class="col"></div>
@@ -41,7 +45,7 @@
 							<p class="my-0"><strong>${{ item.weapon.price }}</strong></p>
 						</td>
 						<td class="py-3 w-25">
-							<form class="form update-form" method="POST" action="">
+							<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
 								{% csrf_token %}
 								<div class="form-group">
 									<div class="input-group">
@@ -69,10 +73,10 @@
 								</div>
 							</form>
                             <a class="update-link text-success"><strong>Update</strong></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><strong>Remove</strong></a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><strong>Remove</strong></a>
 						</td>
 						<td class="py-3">
-							<p class="my-0"><strong>${{ item.weapon.price }}</strong></p>
+							<p class="my-0"><strong>${{ item.weapon.price | calc_subtotal:item.quantity }}</strong></p>
 						</td>
 					</tr>
 					{% endfor %}
@@ -129,7 +133,7 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/bag/remove/${itemId}`;
+        var url = `/bag/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
