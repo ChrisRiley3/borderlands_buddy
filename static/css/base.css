@@ -238,3 +238,7 @@ hr {
 .bag-button:hover {
   transform: scale(1.1);
 }
+
+.order-confirmation-wrapper {
+    border: 1px solid #000;
+}
