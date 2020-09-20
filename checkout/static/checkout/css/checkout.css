@@ -37,6 +37,16 @@
     border: solid 1px #000;
 }
 
+select,
+select option {
+    color: #000;
+}
+
+select:invalid,
+select option[value=''] {
+    color: #aab7c4 !important;
+}
+
 .order-confirmation-wrapper {
     border: 1px solid #000;
 }
