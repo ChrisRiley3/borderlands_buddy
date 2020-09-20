@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'weapons',
     'bag',
     'checkout',
+    'profiles',
 
     # Other
     'crispy_forms',
