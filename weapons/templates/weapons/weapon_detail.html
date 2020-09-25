@@ -31,6 +31,12 @@
             <i class="fas fa-tag mr-1"></i>{{ weapon.category.friendly_name}}
           </a>
         </p>
+        {% if request.user.is_superuser %}
+		<small class="ml-3 font-weight-bold">
+            <a href="{% url 'edit_weapon' weapon.id %}">Edit</a> | 
+            <a class="text-danger" href="{% url 'delete_weapon' weapon.id %}">Delete</a>
+        </small>
+		{% endif %}
         {% endif %}
         <p class="lead mb-0 text-left font-weight-bold">
           Price: ${{ weapon.price }}

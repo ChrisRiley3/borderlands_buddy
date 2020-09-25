@@ -74,9 +74,9 @@ def add_weapon(request):
     if request.method == 'POST':
         form = WeaponForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            weapon = form.save()
             messages.success(request, 'Successfully added weapon!')
-            return redirect(reverse('add_weapon'))
+            return redirect(reverse('weapon_detail', args=[weapon.id]))
         else:
             messages.error(request, 'Failed to add weapon. Please ensure the form is valid.')
     else:
@@ -111,3 +111,11 @@ def edit_weapon(request, weapon_id):
     }
 
     return render(request, template, context)
+
+
+def delete_weapon(request, weapon_id):
+    """ Delete a weapon from the store """
+    weapon = get_object_or_404(Weapon, pk=weapon_id)
+    weapon.delete()
+    messages.success(request, 'Weapon deleted!')
+    return redirect(reverse('weapons'))
