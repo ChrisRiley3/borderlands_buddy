@@ -71,7 +71,16 @@ def weapon_detail(request, weapon_id):
 
 def add_weapon(request):
     """ Add a product to the store """
-    form = WeaponForm()
+    if request.method == 'POST':
+        form = WeaponForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added weapon!')
+            return redirect(reverse('add_weapon'))
+        else:
+            messages.error(request, 'Failed to add weapon. Please ensure the form is valid.')
+    else:
+        form = WeaponForm()
     template = 'weapons/add_weapon.html'
     context = {
         'form': form,
