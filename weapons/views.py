@@ -87,3 +87,27 @@ def add_weapon(request):
     }
 
     return render(request, template, context)
+
+
+def edit_weapon(request, weapon_id):
+    """ Edit a weapon in the store """
+    weapon = get_object_or_404(Weapon, pk=weapon_id)
+    if request.method == 'POST':
+        form = WeaponForm(request.POST, request.FILES, instance=weapon)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated weapon!')
+            return redirect(reverse('weapon_detail', args=[weapon.id]))
+        else:
+            messages.error(request, 'Failed to update weapon. Please ensure the form is valid.')
+    else:
+        form = WeaponForm(instance=weapon)
+        messages.info(request, f'You are editing {weapon.name}')
+
+    template = 'weapons/edit_weapon.html'
+    context = {
+        'form': form,
+        'weapon': weapon,
+    }
+
+    return render(request, template, context)
