@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Weapon, Category
 from django.db.models.functions import Lower
+
+from .models import Weapon, Category
+from .forms import WeaponForm
 
 
 def all_weapons(request):
@@ -65,3 +67,14 @@ def weapon_detail(request, weapon_id):
     }
 
     return render(request, 'weapons/weapon_detail.html', context)
+
+
+def add_weapon(request):
+    """ Add a product to the store """
+    form = WeaponForm()
+    template = 'weapons/add_weapon.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

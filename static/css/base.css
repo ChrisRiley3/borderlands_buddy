@@ -239,7 +239,17 @@ hr {
   color: #fff !important;
 }
 
-.bag-button:hover {
+.custom-btn1 {
+    background-color: #ffb731 !important;
+    color: #000!important;
+    border-color: #000 !important;
+    font-weight: bold;
+}
+
+.custom-btn1:hover {
+  transform: scale(1.1);
+}
+.custom-btn2:hover {
   transform: scale(1.1);
 }
 
@@ -296,16 +306,4 @@ hr {
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
-}
-
-.custom-btn {
-    background-color: #000 !important;
-    color: #fff !important;
-    border-color: #000 !important;
-}
-
-.custom-btn:hover {
-    background-color: #fff !important;
-    color: #000 !important;
-    border-color: #000 !important;
 }
