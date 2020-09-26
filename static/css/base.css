@@ -80,23 +80,6 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* -------------------------------- Bootstrap Toats */
-
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
-
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -177,40 +160,22 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* -------------------------------- Media Queries */
+/*............................................................................... Bootstrap Toasts */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-  .fixed-top-desktop-only {
+.message-container {
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-  }
-
-  .header-container {
-    padding-top: 164px;
-  }
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-  .header-container {
-    padding-top: 116px;
-  }
+.custom-toast {
+    overflow: visible;
+}
 
-  body {
-    height: calc(100vh - 116px);
-    background-position-y: 70px;
-  }
+.toast-capper {
+    height: 2px;
 }
 
 /*............................................................................... Custom css */
@@ -220,7 +185,7 @@ hr {
 }
 
 .main-text {
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 2px;
   border: 1px solid #000;
   border-radius: 5px;
@@ -230,7 +195,7 @@ hr {
 
 .main-header {
   background-color: rgba(255, 183, 49);
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 2px;
   border-bottom: 1px solid #000;
 }
@@ -340,4 +305,56 @@ hr {
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
+}
+
+/*............................................................................... Media Queries */
+
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+  .fixed-top-desktop-only {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .header-container {
+    padding-top: 164px;
+  }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 116px;
+  }
+
+  body {
+    height: calc(100vh - 116px);
+    background-position-y: 70px;
+  }
+}
+
+/* Adds margin to the main text box on the home page when using mobile */
+@media (max-width: 574px) {
+    .main-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Adds top margin to the main text box when using very small mobile screens */
+@media (max-width: 372px) {
+    .main-text {
+        margin-top: 25px !important;
+    }
 }
