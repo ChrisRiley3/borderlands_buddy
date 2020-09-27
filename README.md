@@ -5,4 +5,5 @@ users will get the chance to experience the game like everyone else who can play
 instead of spending hours trying to find them. This will help to develop the game further as users wont be getting bored not being able to use the weapons other users have spent 
 hours to get increasing the amount of people playing the game. Users who do have time to play the game for hours on end will also beneit from this site. Just because they can play
 for hours doesnt guarantee them the weapon they want, so they can also sign up to the site if they ever get sick of farming the weapon they just cant seem to get.
+
 ---
