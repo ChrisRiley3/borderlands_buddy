@@ -7,7 +7,7 @@ hours to get increasing the amount of people playing the game. Users who do have
 for hours doesnt guarantee them the weapon they want, so they can also sign up to the site if they ever get sick of farming the weapon they just cant seem to get.
 
 # User Experience (UX)
-* User Stories
+* **User Stories**
 
     * First Time Visitor Goals:
 
@@ -41,3 +41,31 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
         a. As a frequent user, I want to see more new weapons added. The site is designed so the super user will be able to add weapons to the database, edit existing weapons and delete weapons
            people are no longer buying.
+
+* **Design**
+
+    * Colour Scheme: 
+
+        - The game is a very bright game. So I have matched the website to the games background image using bright orange for the navigation bar, some button backgrounds and weapon information
+          backgrounds. Black for the text on the website, also blue and red to match buttons up to what they will do. For example removing a item from your basket will be a red and 
+          updating will be blue. The reason I chose these colours blue and red is because most site will stick with these colours when doing the same thing so to keep a user from getting confused
+          I will keep them the same. 
+
+    * Typography:
+
+        - The main font on the website is Raleway and the backup font is Sans Serif. The reason I chose Raleway as my main font used throughout the full website was because its very clean and 
+          easy to read the font is very attractive in a way they it jumps out to the user which makes it appropriate on a site trying to sell itmes.
+        
+        - The weapon details section is very easy to understand and read. Users will know exactly what they are purchasing and know exactly what the wepon does.
+
+        - The text on the site is also bold so the user wont have trouble reading it. With the background being bright if the text wasnt bold it would be faint and some users may struggle to see
+          what they are trying to read.
+    
+    * Imagery
+
+        - The images used on the site are all saved in the media folder and are visible on the site by using JSON data. these JSON files can be found in weapons/fixtures/weapons.json
+          
+        - The main background image is designed to be striking and crisp to catch the users eye and make them attracted to the site so they want to browse it.
+
+        - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
+          The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
