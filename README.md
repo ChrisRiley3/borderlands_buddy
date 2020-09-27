@@ -25,7 +25,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
         d. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time. The user will 
            have the option to search for any weapon they like as long as it is in the database. The search bar will be at the top on desktop and in the dropdown menu on mobile.
-           
+
         e. As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
            want to buy a weapon. A user will be able to achieve this by navigating to their profile in the accounts section once they have signed up to the website. On this page the user
            has a simple form to fill out with all the necessary billing information on it. All the user has to do is fill out the information and click update. Now everytime the user 
