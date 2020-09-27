@@ -1,5 +1,5 @@
-# Taken from code institute mini project
 import uuid
+import random
 
 from django.db import models
 from django.db.models import Sum
