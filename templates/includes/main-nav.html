@@ -42,7 +42,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="rare-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="rare-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Rare
             </a>
             <div class="dropdown-menu border-0 custom-dropdown" aria-labelledby="specials-link">
@@ -54,6 +54,12 @@
                 <a href="{% url 'weapons' %}?category=rare_launchers" class="dropdown-item">Launchers</a>
                 <a href="{% url 'weapons' %}?category=rare_pistols,rare_assault_rifles,rare_sniper_rifles,rare_submachine_guns,rare_shotguns,rare_launchers" class="dropdown-item">All Weapons</a>
             </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'feedback' %}" id="feedback-link">
+                Feedback
+            </a>
         </li>
     </ul>
 </div>
