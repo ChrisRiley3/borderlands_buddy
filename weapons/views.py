@@ -71,7 +71,7 @@ def weapon_detail(request, weapon_id):
 
 @login_required
 def add_weapon(request):
-    """ Add a product to the store """
+    """ Add a weapon to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))

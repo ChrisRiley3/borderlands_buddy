@@ -3,7 +3,7 @@ from .models import Feedback
 
 
 class FeedbackForm(forms.ModelForm):
-    class meta:
+    class Meta:
         model = Feedback
         fields = '__all__'
 
