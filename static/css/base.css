@@ -190,7 +190,7 @@ hr {
   border: 1px solid #000;
   border-radius: 5px;
   background-color: rgba(255, 183, 49, 0.6);
-  color: red;
+  color: #000;
 }
 
 .main-header {
@@ -251,6 +251,10 @@ hr {
 }
 .custom-btn2:hover {
   transform: scale(1.1);
+}
+
+.feedback-text {
+    letter-spacing: 2px;
 }
 
 /*............................................................................... Allauth */
