@@ -5,7 +5,7 @@ from .models import Feedback
 class FeedbackForm(forms.ModelForm):
     class Meta:
         model = Feedback
-        fields = '__all__'
+        fields = ['full_name', 'email', 'feedback']
 
     def __init__(self, *args, **kwargs):
         """

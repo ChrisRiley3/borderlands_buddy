@@ -31,14 +31,25 @@
         <div class="row">
             <div class="col-12 feedback-text">
                 {% for feedback in feedbacks %}
-                    <h4 class="mt-3"><strong>Name:</strong></h4>
-                    <p class="font-weight-bold">{{ feedback.full_name }}</p>
-                    <h4><strong>Email:</strong></h4>
-                    <p class="font-weight-bold"> {{ feedback.email }}</p>
-                    <h4><strong>Feedback:</strong></h4>
-                    <p class="font-weight-bold"> {{ feedback.feedback }}</p>
+                    <p class="mt-3">
+                        <strong>Name:</strong> {{ feedback.full_name }}
+                    </p>
+                    {% if request.user.is_superuser%}
+                        <p>
+                            <strong>Email:</strong> {{ feedback.email }}
+                        </p>
+                    {% endif%}
+                    <p>
+                        <strong>Feedback:</strong> {{ feedback.feedback }}
+                    </p>
+                    <small class="ml-3 font-weight-bold">
+                        {% if feedback.user.user.username == request.user.username %}
+                            <a href="{% url 'edit_feedback' feedback.id %}">Edit</a>
+                            <a class="text-danger justify-content-end" href="{% url 'delete_feedback' feedback.id %}">Delete</a>
+                        {% endif %}
+                    </small>
                     <hr>
-                {% endfor %}            
+                {% endfor %}         
             </div>
         </div>
     </div>

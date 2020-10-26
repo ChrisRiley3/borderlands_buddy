@@ -69,6 +69,7 @@ def weapon_detail(request, weapon_id):
 
     return render(request, 'weapons/weapon_detail.html', context)
 
+
 @login_required
 def add_weapon(request):
     """ Add a weapon to the store """
@@ -92,6 +93,7 @@ def add_weapon(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_weapon(request, weapon_id):
@@ -120,6 +122,7 @@ def edit_weapon(request, weapon_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_weapon(request, weapon_id):

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+	<div class="row">
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<hr>
+			<h1 class="logo-font mb-4">Edit Feedback</h1>
+			<hr>
+		</div>
+	</div>
+    <div class="row">
+            <div class="col-12 col-md-6">
+                <form method="POST"  class="form mb-2 font-weight-bold" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="text-right">
+                        <a class="btn custom-btn1 rounded-1" href="{% url 'feedback' %}">Cancel</a>
+                        <button class="btn btn-black rounded-1 custom-btn2 ml-3" type="submit">Edit Feedback</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+{% endblock %}
