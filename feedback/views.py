@@ -45,9 +45,6 @@ def add_feedback(request):
 @login_required
 def edit_feedback(request, feedback_id):
     """ Edit feedback in the feedback section """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('feedback'))
 
     feedback = get_object_or_404(Feedback, pk=feedback_id)
     if request.method == 'POST':
