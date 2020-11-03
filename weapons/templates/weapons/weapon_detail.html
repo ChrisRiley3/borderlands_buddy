@@ -87,6 +87,41 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h1 class="logo-font mb-4">Review</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="submit-button mt-2 mb-2">
+        <a href="{% url 'add_review' weapon.id %}" class="btn btn-black rounded-1 ml-2 custom-btn2">
+            <span class="font-weight-bold">Add Review</span>
+            <span class="icon">
+                <i class="fas fa-comments"></i>
+            </span>
+        </a>
+	</div>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-12 feedback-text">
+                {% for review in reviews %}
+                    <p class="mt-3">
+                        <strong>Name:</strong> {{ review.full_name }}
+                    </p>
+                    <p>
+                        <strong>Email:</strong> {{ review.email }}
+                    </p>
+                    <p>
+                        <strong>Feedback:</strong> {{ review.review }}
+                    </p>
+                    <hr>
+                {% endfor %}         
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

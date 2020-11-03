@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Weapon, Category
-from .forms import WeaponForm
+from .models import Weapon, Category, Review
+from .forms import WeaponForm, ReviewForm
 
 
 def all_weapons(request):
@@ -62,9 +62,11 @@ def weapon_detail(request, weapon_id):
     """ A view to show individual weapon details """
 
     weapon = get_object_or_404(Weapon, pk=weapon_id)
+    reviews = Review.objects.all()
 
     context = {
         'weapon': weapon,
+        'reviews': reviews
     }
 
     return render(request, 'weapons/weapon_detail.html', context)
@@ -135,3 +137,28 @@ def delete_weapon(request, weapon_id):
     weapon.delete()
     messages.success(request, 'Weapon deleted!')
     return redirect(reverse('weapons'))
+
+
+def add_review(request, weapon_id):
+    """ A view for users to add a review """
+
+    weapon = Weapon.objects.get(pk=weapon_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            reviews = form.save(commit=False)
+            reviews.save()
+            messages.success(request, 'Successfully added a review!')
+            return redirect(reverse('weapon_detail', args=[weapon.id]))
+            reviews.objects.create(reviews=reviews)
+        else:
+            messages.error(request, 'Failed to add a review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm()
+    template = 'weapons/add_review.html'
+    context = {
+        'form': form,
+        'weapon': weapon,
+    }
+
+    return render(request, template, context)

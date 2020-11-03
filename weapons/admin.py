@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Weapon, Category
+from .models import Weapon, Category, Review
 
 
 class weaponAdmin(admin.ModelAdmin):
@@ -21,3 +21,4 @@ class categoryAdmin(admin.ModelAdmin):
 
 admin.site.register(Weapon, weaponAdmin)
 admin.site.register(Category, categoryAdmin)
+admin.site.register(Review)
