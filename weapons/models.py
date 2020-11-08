@@ -30,7 +30,7 @@ class Weapon(models.Model):
 
 
 class Review(models.Model):
-    weapon = models.ForeignKey(Weapon, on_delete=models.CASCADE, default=1)
+    weapon = models.OneToOneField(Weapon, on_delete=models.CASCADE, default=1)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     review = models.CharField(max_length=500, null=False, blank=False)

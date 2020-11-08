@@ -62,7 +62,7 @@ def weapon_detail(request, weapon_id):
     """ A view to show individual weapon details """
 
     weapon = get_object_or_404(Weapon, pk=weapon_id)
-    reviews = Review.objects.all()
+    reviews = Review.objects.filter(weapon=weapon_id)
 
     context = {
         'weapon': weapon,
@@ -147,6 +147,7 @@ def add_review(request, weapon_id):
         form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             reviews = form.save(commit=False)
+            reviews.weapon = weapon
             reviews.save()
             messages.success(request, 'Successfully added a review!')
             return redirect(reverse('weapon_detail', args=[weapon.id]))

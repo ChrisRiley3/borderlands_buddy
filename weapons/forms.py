@@ -25,7 +25,7 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        fields = ['weapon', 'full_name', 'email', 'review']
+        fields = ['full_name', 'email', 'review']
 
     def __init__(self, *args, **kwargs):
         """
@@ -34,7 +34,6 @@ class ReviewForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'weapon': 'Weapon',
             'full_name': 'Full Name',
             'email': 'Email',
             'review': 'Review',
