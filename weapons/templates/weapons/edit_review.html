@@ -15,18 +15,18 @@
 	<div class="row">
 		<div class="col">
 			<hr>
-			<h1 class="logo-font mb-4">Edit Feedback</h1>
+			<h1 class="logo-font mb-4">Edit Review</h1>
 			<hr>
 		</div>
 	</div>
     <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" class="form mb-2 font-weight-bold" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_review' review.id weapon.id %}" class="form mb-2 font-weight-bold" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">
-                        <a class="btn custom-btn1 rounded-1" href="{% url 'feedback' %}">Cancel</a>
-                        <button class="btn btn-black rounded-1 custom-btn2 ml-3" type="submit">Edit Feedback</button>
+                        <a class="btn custom-btn1 rounded-1" href="">Cancel</a>
+                        <button class="btn btn-black rounded-1 custom-btn2 ml-3" type="submit">Edit Review</button>
                     </div>
                 </form>
             </div>            

@@ -163,3 +163,30 @@ def add_review(request, weapon_id):
     }
 
     return render(request, template, context)
+
+
+def edit_review(request, review_id, weapon_id):
+    """ Edit a review in the review section of weapons detail"""
+
+    weapon = get_object_or_404(Weapon, pk=weapon_id)
+    review = get_object_or_404(Review, pk=review_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated review!')
+            return redirect(reverse('weapon_detail', args=[weapon.id]))
+        else:
+            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing {weapon.manufacture}')
+
+    template = 'weapons/edit_review.html'
+    context = {
+        'form': form,
+        'review': review,
+        'weapon': weapon,
+    }
+
+    return render(request, template, context)
