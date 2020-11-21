@@ -69,3 +69,21 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
         - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
           The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
+
+* **Wire Frames**
+
+    * Home Page Wireframe -
+    * All Weapons Wireframe -
+    * Feedback Wireframe - 
+    * Weapons Detail Wireframe - 
+    * Register Page Wireframe -
+    * Login Page Wireframe -
+    * Forgot Password Wireframe -
+    * Manage Weapons Wireframe (Super User only) -
+    * My Profile Wireframes - 
+    * Shopping Bag Wireframe - 
+    * Checkout Wireframe -
+    * Checkout success Wireframe -
+    
+
+
