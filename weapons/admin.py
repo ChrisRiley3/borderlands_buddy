@@ -19,6 +19,14 @@ class categoryAdmin(admin.ModelAdmin):
     )
 
 
+class reviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'weapon',
+        'review',
+        'email',
+    )
+
+
 admin.site.register(Weapon, weaponAdmin)
 admin.site.register(Category, categoryAdmin)
-admin.site.register(Review)
+admin.site.register(Review, reviewAdmin)

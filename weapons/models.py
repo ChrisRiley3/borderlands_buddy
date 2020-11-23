@@ -1,4 +1,5 @@
 from django.db import models
+from profiles.models import UserProfile
 
 
 class Category(models.Model):
@@ -30,6 +31,8 @@ class Weapon(models.Model):
 
 
 class Review(models.Model):
+    user = models.ForeignKey(UserProfile, null=False, blank=False,
+                             on_delete=models.CASCADE)
     weapon = models.ForeignKey(Weapon, on_delete=models.CASCADE, default=0)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)

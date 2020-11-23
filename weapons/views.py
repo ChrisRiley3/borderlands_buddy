@@ -7,6 +7,8 @@ from django.db.models.functions import Lower
 from .models import Weapon, Category, Review
 from .forms import WeaponForm, ReviewForm
 
+from profiles.models import UserProfile
+
 
 def all_weapons(request):
     """ A view to show all the weapons, including sorting and search queries  """
@@ -139,6 +141,7 @@ def delete_weapon(request, weapon_id):
     return redirect(reverse('weapons'))
 
 
+@login_required
 def add_review(request, weapon_id):
     """ A view for users to add a review """
 
@@ -147,6 +150,7 @@ def add_review(request, weapon_id):
         form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             reviews = form.save(commit=False)
+            reviews.user = UserProfile.objects.get(user=request.user)
             reviews.weapon = weapon
             reviews.save()
             messages.success(request, 'Successfully added a review!')
@@ -165,6 +169,7 @@ def add_review(request, weapon_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_review(request, review_id, weapon_id):
     """ Edit a review in the review section of weapons detail"""
 
