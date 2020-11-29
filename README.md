@@ -70,20 +70,27 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
         - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
           The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
 
-* **Wire Frames**
+* **Wireframes**
 
-    * Home Page Wireframe -
-    * All Weapons Wireframe -
-    * Feedback Wireframe - 
-    * Weapons Detail Wireframe - 
-    * Register Page Wireframe -
-    * Login Page Wireframe -
-    * Forgot Password Wireframe -
-    * Manage Weapons Wireframe (Super User only) -
-    * My Profile Wireframes - 
-    * Shopping Bag Wireframe - 
-    * Checkout Wireframe -
-    * Checkout success Wireframe -
+    * Desktop Wireframes - 
+    * Mobile Wireframes -
+
+# Features
+
+* Borderlands Buddy is responsive on all device sizes
+* There are interactive elemenbts within the website
+    - Users have the ability to leave feedback on the webpage maybe things they would like to see in the future.
+    - Users have the ability to leave reviews on weapons they have used in game so they can advice other users if that weapon is worth buying.
+    - Users have the ability to purchase weapons they want to use and redeem them in game.
+
+# Technologies Used 
+
+**Languages Used**
+    - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+
+
+
     
 
 
