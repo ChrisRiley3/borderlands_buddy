@@ -85,7 +85,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
 # Technologies Used 
 
-## Languages Used:
+* **Languages Used:**
 
     * [HTML5](https://en.wikipedia.org/wiki/HTML5)
     * [CSS3](https://en.wikipedia.org/wiki/CSS)
