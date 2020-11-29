@@ -114,6 +114,13 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     * [Django](https://www.djangoproject.com/)
         - Django was used for this project to make it easier to build and to help make it quicker.
         - using the terminal window that gitpod provides it makes it easy to download django, start a new project and create new apps within that project in no time at all.
+
+# Testing
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)service , pep8 checker that comes with gitpod and also just to make sure i used a [pep8 online checker](http://pep8online.com/) to validate every page on this project to make sure that there
+were no syntax errors. 
+
+
+
     
 
 

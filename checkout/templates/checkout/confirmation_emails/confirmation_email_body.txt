@@ -2,6 +2,8 @@ Hello {{ order.full_name }}!
 
 This is a confirmation of your order at Borderlands Buddy. Your order information is below:
 
+To redeem your weapon or weapons enter your Order Number:{{ order.order_number }} into the redeem code section of Borderlands.
+
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
