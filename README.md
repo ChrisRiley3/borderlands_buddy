@@ -104,7 +104,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     * [jQuery](https://jquery.com/)
         - Jquery comes with Boostrap to help make the navbar responsive.
         - Jquery was used with the update bag and remove from bag buttons so users could easily update their shopping bag and easily remove weapons from their bag.
-        - Jquery was used for the country field selector in [profiles](profiles/templates/profiles/profile.html). 
+        - Jquery was used for the country field selector in [profiles](profiles/static/profiles/js/countryfield.js). 
         - Jquery was also used for all the stripe elements this was took from their docs https://stripe.com/docs/payments/accept-a-payment and https://stripe.com/docs/stripe-js. 
         - Jquery was also used in [weapons](weapons/templates/weapons/includes/quantity_input_script.html) to help with users controlling the quanity of the weapon they want to buy.
     * [git](https://git-scm.com/)
