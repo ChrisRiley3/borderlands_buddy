@@ -93,6 +93,28 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
     * [SQL](https://en.wikipedia.org/wiki/SQL)
 
+* **Frameworks, Libraries & Programs Used**
+
+    * [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+        - Bootstrap was useed to assist with the website being responsive and styling of the website
+    * [Google Fonts](https://fonts.google.com/)
+        - Google fonts was used to import the 'Railway' font into static/css/base.css file which is used on all the pages across the website.
+    * [Font Awesome](https://fontawesome.com/)
+        - Font awesome was used on the majority of pages throughout the website to add icons to buttons for UX purposes.
+    * [jQuery](https://jquery.com/)
+        - Jquery comes with Boostrap to help make the navbar responsive.
+        - Jquery was used with the update bag and remove from bag buttons so users could easily update their shopping bag and easily remove weapons from their bag.
+        - Jquery was used for the country field selector in [profiles](profiles/templates/profiles/profile.html). 
+        - Jquery was also used for all the stripe elements this was took from their docs https://stripe.com/docs/payments/accept-a-payment and https://stripe.com/docs/stripe-js. 
+        - Jquery was also used in [weapons](weapons/templates/weapons/includes/quantity_input_script.html) to help with users controlling the quanity of the weapon they want to buy.
+    * [git](https://git-scm.com/)
+        - Git was used for version control in the terminal that gitpod provides so I could could commit to git and then push to gitpod.
+    * [Github](https://github.com/)
+        - Github was used to store the code from the project after it was pushed from git.
+    * [Django](https://www.djangoproject.com/)
+        - Django was used for this project to make it easier to build and to help make it quicker.
+        - using the terminal window that gitpod provides it makes it easy to download django, start a new project and create new apps within that project in no time at all.
+    
 
 
 
