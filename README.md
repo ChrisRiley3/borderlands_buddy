@@ -85,8 +85,13 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
 # Technologies Used 
 
-**Languages Used**
-    - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+## Languages Used:
+
+    * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    * [CSS3](https://en.wikipedia.org/wiki/CSS)
+    * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    * [SQL](https://en.wikipedia.org/wiki/SQL)
 
 
 
