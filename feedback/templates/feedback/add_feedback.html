@@ -20,15 +20,16 @@
 		</div>
 	</div>
     <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_feedback' %}" class="form mb-2 font-weight-bold" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <div class="text-right">
-                        <a class="btn custom-btn1 rounded-1" href="{% url 'feedback' %}">Cancel</a>
-                        <button class="btn btn-black rounded-1 custom-btn2 ml-3" type="submit">Add Feedback</button>
-                    </div>
-                </form>
-            </div>            
-        </div>
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_feedback' %}" class="form mb-2 font-weight-bold" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="text-right">
+                    <a class="btn custom-btn1 rounded-1" href="{% url 'feedback' %}">Cancel</a>
+                    <button class="btn btn-black rounded-1 custom-btn2 ml-3" type="submit">Add Feedback</button>
+                </div>
+            </form>
+        </div>            
+    </div>
+</div>
 {% endblock %}

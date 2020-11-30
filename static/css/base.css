@@ -242,6 +242,7 @@ hr {
 
 .custom-btn2 {
     background-color: #000;
+    color: #fff !important;
     text-transform: uppercase;
     font-weight: bold;
 }
