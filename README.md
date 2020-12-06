@@ -13,32 +13,34 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
         a. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
            
-        b. As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile. The user will find the site
-           very easy to navigate around as the navigation bar is accessible on every page on the website and is very clear to what the user will be redirected to when clicking a link. 
-           Also the website's navigation bar is fully responsive so mobile users can access what they require easily.
+        b. As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile. 
 
-        c. As a first time visitor, I want to be able to sign up to the site easily. The user will be able to sign up to the site by navigating to the account section that is clearly
-           labelled on the top nav bar. Once the user clicks this link a dropdown menu will appear and they can register from there. The user will be redirected to a sign up page 
-           once they click register which will have a very simple form for them to fill out and they will now be a registered user on submitting the form.
+        c. As a first time visitor, I want to be able to sign up to the site easily.
 
-        d. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time. The user will 
-           have the option to search for any weapon they like as long as it is in the database. The search bar will be at the top on desktop and in the dropdown menu on mobile.
+        d. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time.
 
         e. As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
-           want to buy a weapon. A user will be able to achieve this by navigating to their profile in the accounts section once they have signed up to the website. On this page the user
-           has a simple form to fill out with all the necessary billing information on it. All the user has to do is fill out the information and click update. Now everytime the user 
-           wants to buy a weapon they wont have to fill out all the billing information again it will already be done for them.
+           want to buy a weapon.
 
     * Returning Visitor Goals:
 
-        a. As a returning visitor, I want to be able to view my order history incase I forgot to redeem my key I need to input on my console of choice. The user can easily achieve this by
-           navigating to their profile and on this page they will have all their order history giving them a brief view of the order. Clicking on a order will redirect them 
-           to a page were they can see the full order details.
+        a. As a returning visitor, I want to be able to view my order history incase I forgot to redeem my key I need to input on my console of choice.
+
+        b. As a returning visitor, I want to be able to leave feedback on the site with information like what I like about the site and maybe what I would like to see added to the site.
+        
+        c. As a returning visitor, I want to be able to leave reviews on weapons that I have bought and used to help other users make that final decision on buying that weapon.
+
+        d. As a returning visitor, I want to be able to purchase weapons of my choice.
 
     *  Frequent User Goals:
 
         a. As a frequent user, I want to see more new weapons added. The site is designed so the super user will be able to add weapons to the database, edit existing weapons and delete weapons
            people are no longer buying.
+        
+        b. As a frequent user, I want to be able to edit and delete the feedback that I have left on the website.
+
+        c. As a frequent user, I want to be able to edit reviews that I have left on weapons.
+        
 
 * **Design**
 
@@ -121,24 +123,83 @@ were no syntax errors.
 * **Testing User Stories from User Experience (UX) Section**
 
     * First Time Visitor Goals:
-        As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
+
+        * As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
 
         a. The user can obtain this information on the websites homepage which clearly states the sites main purpose and what the organisation is wanting to achieve. 
-            All the user has to do is simply navigate to the website and the home page with the information will be the first page that loads up.
-            
+            All the user has to do is simply navigate to the website and the home page with the information will be the first page that loads up.  
         b. The user is hit with a bright and colourful home page where the purpose of the site is made immediately with some text right next to the games background image.
             In this short paragrpah the users can learn what the site is trying to achieve.
-
         c. The user has a few different options at this point they can ether click the shop now button that will take them directly the all weapons page of the site. The user
             can also use the easy and manageable navigation menu to help them find the weapon they require. If the user knows the exact weapon they are looking for then all they
             have to do is use the search bar and this will take them directly to that weapon where they can use some of the other sites features and purcahse the weapon. However this
             is only if the weapon is in the sites database. With Borderlands 3 literally having  a [billion](https://www.google.com/search?q=how+many+weapons+are+in+borderlands+3&rlz=1C1CHBF_en-GBGB926GB926&oq=how+many+weapons+are+in+border&aqs=chrome.0.0i457j69i57j0j0i22i30l6.6923j1j15&sourceid=chrome&ie=UTF-8)
-            guns, if you dont believe me follow the link and see for yourself. Guns will be constantly be getting added to the database. 
+            guns, if you dont believe me follow the link and see for yourself. Guns will be constantly be getting added to the database.
+        
+        * As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile.
 
+        a. The user will find the site very easy to navigate around as the navigation bar is accessible on every page on the website and is very clear to what the user
+           will be redirected to when clicking a link.
+        b. The website's navigation bar is fully responsive so mobile users also have access to every feature on the site.
+        c. When a user wants to submit some feedback on the site and they do that by submitting the feedback form they are redirected back to the top of the feedback page
+           where they can see what they just submitted and also what other people have submitted to. Notice how they are redirected back to the top of the pay this it to allow
+           for easy navigation once again as the nav bar is situated at the top of the page. This applies for any reviews left on a weapons page to. Once the user has submitted
+           a review on a weapon they will be redirected back to the top of that weapons page where the nav bar is.
+        
+        * As a first time visitor, I want to be able to sign up to the site easily.
+
+        a. The user will be able to sign up to the site by navigating to the account section that is clearly labelled on the top nav bar. Once the user clicks this link a dropdown
+           menu will appear and they can register from there.
+        b. The user will be redirected to a sign up page once they click register which will have a very simple form for them to fill out and they will now be a registered user on 
+           submitting the form.
+        
+        * As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
+          want to buy a weapon.
+        
+        a. A user will be able to achieve this by navigating to their profile in the accounts section once they have signed up to the website. On this page the user
+           has a simple form to fill out with all the necessary billing information on it.
+        b. All the user has to do is fill out the information and click update. Now everytime the user wants to buy a weapon they wont have to fill out all the billing information 
+           again it will already be done for them.
     
+    * Returning Visitor Goals:
 
+        * As a returning visitor, I want to be able to view my order history incase I forgot to redeem the key I needed to input on my console of choice.
 
+        a. The user can easily achieve this by navigating to their profile and on this page they will have all their order history giving them a brief view of the order.
+        b. Clicking on a order will redirect them to a page were they can see the full order details.
+        c. Also The user will have had a email sent to them when they purcahsed the weapon the user can find all the inforamtion they need on this email if they have saved it.
 
-    
+        * As a returning visitor, I want to be able to leave and read feedback on the site with information like what I like about the site and maybe what I would like to see added to the site.
 
+        a. If the user is wanting to interact with the organisation and leave feedback on the website then all they have to do is use the navigation menu and navigate over to the feedback
+           page.
+        b. When they click on the feedback button they will be directed to the feedback page where they can see all the other feedback that has been left by other users.
+        c. Now if the user wishes they can click the add feedback button where they will be directed again to the add feedback page this is where the user will be requred to fill out a simple
+           form and on submitting that form they will be redirected back to the feedback page where they can now see their feedback has been left for the organisation and other users to read.
+        
+        * As a returning visitor, I want to be able to leave and read reviews on weapons that I have bought and used to help other users make that final decision on buying that weapon.
 
+        a. The user will have to navigate to a weapon of their choice that they wish to purchase. This step has been covered in the first time visitor section.
+        b. once a user has navigated to their weapon of choice they will have a few different option on this page. The page contains information about the weapon itself such as its name, 
+           manufacture, Type of weapon, Price and a short paragraph about the weapon. At this point the user can ether choose to keep shopping as it is not the weapon they have been looking for
+           or they can choose to add it to their bag ready to purchase it.
+        c. The other choice the user has is to navigate to the bottom of that weapons page and this is where the reviews are sitatued. The user can read through other peoples reviews and also
+           add reviews themselves.
+        d. If a user wishes to leave a review about the weapon to help other users they can click the add review button. When they click this button they will be directed to the add review page.
+           At this point I would like to mention that if a user does want to leave feedback or a review when using the website they must be signed in this is so the organisation can keep track of people
+           leaving reviews and feedback. When the user is on the add review page they will have to fill out a simple form and on submitting this form they will be redirtected back to that weapons page and
+           their review will have been added.
+        
+        * As a returning visitor, I want to be able to purchase weapons of my choice.
+
+        a. Users will be able to purchase a weapon of their choice by navigating to the weapon they wish to purchase and clicking the add to basket button.
+        b. When clicking this button they will be hit with a notification with a go to secure checkout button. If the user continues to press this button they
+           they will be directed to the shopping bag page.
+        c. On this page the user will have a few different choices. If the user decides they dont just want one of that weapon then they can update the quantity on this page with the price also
+           being automatically updated for them.
+        d. What if the user changes their mind and decides they dont want that weapon at all then also on this page the user has the option to remove that weapon from their basket. On clicking remove
+           the basket will be updated.
+        e. If the user decides everything is correct with the order and they wish to purchase the order then they can click the secure checkout button. On this page the user will be required to fill out
+           a billing details form, this form is simple to fill out and if the user has already filled this form out in their profile the form will be automatically generated for them all they will be required to do
+           is fill out the payment details and add their name. Once the user is happy that the form is correct they can click the complete order button which will direct them to a checkout success page
+           with all the details that the user requires to redeem their weapon or weapons. Once the order has went through and the user is on this page they can navigate round the website again.
