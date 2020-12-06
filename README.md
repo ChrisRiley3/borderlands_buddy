@@ -121,6 +121,7 @@ were no syntax errors.
 * **Testing User Stories from User Experience (UX) Section**
 
     * First Time Visitor Goals:
+
         i. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
 
             a. The user can obtain this information on the websites homepage which clearly states the sites main purpose and what the organisation is wanting to achieve. 
@@ -132,7 +133,8 @@ were no syntax errors.
             c. The user has a few different options at this point they can ether click the shop now button that will take them directly the all weapons page of the site. The user
                can also use the easy and manageable navigation menu to help them find the weapon they require. If the user knows the exact weapon they are looking for then all they
                have to do is use the search bar and this will take them directly to that weapon where they can use some of the other sites features and purcahse the weapon. However this
-               is only if the weapon is in the sites database. With Borderlands 3 literally having  a [billion](https://www.google.com/search?q=how+many+weapons+are+in+borderlands+3&rlz=1C1CHBF_en-GBGB926GB926&oq=how+many+weapons+are+in+border&aqs=chrome.0.0i457j69i57j0j0i22i30l6.6923j1j15&sourceid=chrome&ie=UTF-8)
+               is only if the weapon is in the sites database. With Borderlands 3 literally having  a [billion](https://www.google.com/search?q=how+many+weapons+are+in+borderlands+3&rlz=1C1CHBF
+               _en-GBGB926GB926&oq=how+many+weapons+are+in+border&aqs=chrome.0.0i457j69i57j0j0i22i30l6.6923j1j15&sourceid=chrome&ie=UTF-8)
                guns, if you dont believe me follow the link and see for yourself. Guns will be constantly be getting added to the database. 
 
     
