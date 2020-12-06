@@ -11,9 +11,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
     * First Time Visitor Goals:
 
-        a. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and goals. The user can obtain this information on the websites homepage
-           which clearly states the sites main purpose and the goals. All the user has to do is simply navigate to the website and the home page with the information will be the first 
-           page that loads up.
+        a. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
            
         b. As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile. The user will find the site
            very easy to navigate around as the navigation bar is accessible on every page on the website and is very clear to what the user will be redirected to when clicking a link. 
@@ -116,10 +114,26 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
         - using the terminal window that gitpod provides it makes it easy to download django, start a new project and create new apps within that project in no time at all.
 
 # Testing
-The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)service , pep8 checker that comes with gitpod and also just to make sure i used a [pep8 online checker](http://pep8online.com/) to validate every page on this project to make sure that there
-were no syntax errors. 
+The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validator](https://validator.w3.org/#validate_by_input) service, pep8 checker that comes with gitpod
+and also just to make sure I used a [pep8 online checker](http://pep8online.com/) to validate every page on this project to make sure that there
+were no syntax errors.
 
+* **Testing User Stories from User Experience (UX) Section**
 
+    * First Time Visitor Goals:
+        i. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
+
+            a. The user can obtain this information on the websites homepage which clearly states the sites main purpose and what the organisation is wanting to achieve. 
+               All the user has to do is simply navigate to the website and the home page with the information will be the first page that loads up.
+            
+            b. The user is hit with a bright and colourful home page where the purpose of the site is made immediately with some text right next to the games background image.
+               In this short paragrpah the users can learn what the site is trying to achieve.
+
+            c. The user has a few different options at this point they can ether click the shop now button that will take them directly the all weapons page of the site. The user
+               can also use the easy and manageable navigation menu to help them find the weapon they require. If the user knows the exact weapon they are looking for then all they
+               have to do is use the search bar and this will take them directly to that weapon where they can use some of the other sites features and purcahse the weapon. However this
+               is only if the weapon is in the sites database. With Borderlands 3 literally having  a [billion](https://www.google.com/search?q=how+many+weapons+are+in+borderlands+3&rlz=1C1CHBF_en-GBGB926GB926&oq=how+many+weapons+are+in+border&aqs=chrome.0.0i457j69i57j0j0i22i30l6.6923j1j15&sourceid=chrome&ie=UTF-8)
+               guns, if you dont believe me follow the link and see for yourself. Guns will be constantly be getting added to the database. 
 
     
 
