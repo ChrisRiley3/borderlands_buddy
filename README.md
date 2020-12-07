@@ -8,72 +8,71 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
 # User Experience (UX)
 
-## User Stories
+### User Stories
 
-    * First Time Visitor Goals:
+* First Time Visitor Goals:
 
-        a. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
+    A. As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
            
-        b. As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile. 
+    B. As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile. 
 
-        c. As a first time visitor, I want to be able to sign up to the site easily.
+    C. As a first time visitor, I want to be able to sign up to the site easily.
 
-        d. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time.
+    D. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time.
 
-        e. As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
-           want to buy a weapon.
+    E. As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
+        want to buy a weapon.
 
-    * Returning Visitor Goals:
+* Returning Visitor Goals:
 
-        a. As a returning visitor, I want to be able to view my order history incase I forgot to redeem my key I need to input on my console of choice.
+    A. As a returning visitor, I want to be able to view my order history incase I forgot to redeem my key I need to input on my console of choice.
 
-        b. As a returning visitor, I want to be able to leave feedback on the site with information like what I like about the site and maybe what I would like to see added to the site.
+    B. As a returning visitor, I want to be able to leave feedback on the site with information like what I like about the site and maybe what I would like to see added to the site.
         
-        c. As a returning visitor, I want to be able to leave reviews on weapons that I have bought and used to help other users make that final decision on buying that weapon.
+    C. As a returning visitor, I want to be able to leave reviews on weapons that I have bought and used to help other users make that final decision on buying that weapon.
 
-        d. As a returning visitor, I want to be able to purchase weapons of my choice.
+    D. As a returning visitor, I want to be able to purchase weapons of my choice.
 
-    *  Frequent User Goals:
+*  Frequent User Goals:
 
-        a. As a frequent user, I want to see more new weapons added.
+    A. As a frequent user, I want to see more new weapons added.
         
-        b. As a frequent user, I want to be able to edit and delete the feedback that I have left on the website.
-
-        c. As a frequent user, I want to be able to edit reviews that I have left on weapons.
+    B. As a frequent user, I want to be able to edit and delete the feedback that I have left on the website.
+    C. As a frequent user, I want to be able to edit reviews that I have left on weapons.
         
 
-## Design
+### Design
 
-    * Colour Scheme: 
+* Colour Scheme: 
 
-        - The game is a very bright game. So I have matched the website to the games background image using bright orange for the navigation bar, some button backgrounds and weapon information
-          backgrounds. Black for the text on the website, also blue and red to match buttons up to what they will do. For example removing a item from your basket will be a red and 
-          updating will be blue. The reason I chose these colours blue and red is because most site will stick with these colours when doing the same thing so to keep a user from getting confused
-          I will keep them the same. 
+    - The game is a very bright game. So I have matched the website to the games background image using bright orange for the navigation bar, some button backgrounds and weapon information
+        backgrounds. Black for the text on the website, also blue and red to match buttons up to what they will do. For example removing a item from your basket will be a red and 
+        updating will be blue. The reason I chose these colours blue and red is because most site will stick with these colours when doing the same thing so to keep a user from getting confused
+        I will keep them the same. 
 
-    * Typography:
+* Typography:
 
-        - The main font on the website is Raleway and the backup font is Sans Serif. The reason I chose Raleway as my main font used throughout the full website was because its very clean and 
-          easy to read the font is very attractive in a way they it jumps out to the user which makes it appropriate on a site trying to sell itmes.
+    - The main font on the website is Raleway and the backup font is Sans Serif. The reason I chose Raleway as my main font used throughout the full website was because its very clean and 
+        easy to read the font is very attractive in a way they it jumps out to the user which makes it appropriate on a site trying to sell itmes.
         
-        - The weapon details section is very easy to understand and read. Users will know exactly what they are purchasing and know exactly what the wepon does.
+    - The weapon details section is very easy to understand and read. Users will know exactly what they are purchasing and know exactly what the wepon does.
 
-        - The text on the site is also bold so the user wont have trouble reading it. With the background being bright if the text wasnt bold it would be faint and some users may struggle to see
-          what they are trying to read.
+    - The text on the site is also bold so the user wont have trouble reading it. With the background being bright if the text wasnt bold it would be faint and some users may struggle to see
+        what they are trying to read.
     
-    * Imagery
+* Imagery
 
-        - The images used on the site are all saved in the media folder and are visible on the site by using JSON data. these JSON files can be found in weapons/fixtures/weapons.json
+    - The images used on the site are all saved in the media folder and are visible on the site by using JSON data. these JSON files can be found in weapons/fixtures/weapons.json
           
-        - The main background image is designed to be striking and crisp to catch the users eye and make them attracted to the site so they want to browse it.
+    - The main background image is designed to be striking and crisp to catch the users eye and make them attracted to the site so they want to browse it.
 
-        - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
-          The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
+    - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
+        The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
 
-## Wireframes
+### Wireframes
 
-    * Desktop Wireframes - 
-    * Mobile Wireframes -
+* Desktop Wireframes - 
+* Mobile Wireframes -
 
 # Features
 
@@ -85,7 +84,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 
 # Technologies Used 
 
-## Languages Used:
+### Languages Used:
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
@@ -93,7 +92,8 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 * [SQL](https://en.wikipedia.org/wiki/SQL)
 
-## Frameworks, Libraries & Programs Used:
+### Frameworks, Libraries & Programs Used:
+
 * [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction/) 
     - Bootstrap was useed to assist with the website being responsive and styling of the website
 * [Google Fonts](https://fonts.google.com/) 
@@ -119,7 +119,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [W3C Markup Va
 and also just to make sure I used a [pep8 online checker](http://pep8online.com/) to validate every page on this project to make sure that there
 were no syntax errors.
 
-## Testing User Stories from User Experience (UX) Section
+### Testing User Stories from User Experience (UX) Section
 
 * First Time Visitor Goals:
 
@@ -257,3 +257,25 @@ were no syntax errors.
 
         E. The user will notice that on this page they dont have the ability to delete their review. Being the developer of this site I believe that every review bad or good should be left on the site as the more information
             other users wishing to purchase the weapon have is better for them when making their decision.
+
+### Further Testing:
+
+* The Website was tested on Google Chrome
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 6/7/8, iPhone X, iPad and iPad Pro
+* A large amount of testing was done on each page to make sure that they were all linking correctly.
+* Every button on the site was tested to make sure that the user was directed to the correct page when clicking them.
+* A large amount of testing went on the payment form to make sure that the form worked correctly so the users can place orders.
+* Testing went into the feedback page especially the edit and delete buttons to make sure that only the signed in user could edit and delete their own feedback and not other users.
+* The same amount of testing went into the review page to make sure users could only edit their own reviews.
+* I had Code Institute tutors sign up to the site and got them to submit a review or feedback or make a purchase to make sure this was all working correctly.
+* Friends and family were also asked to sign up to the site to help point out some bugs and any user experience issues.
+* I tested the Manage Weapons page ti make sure it was allowing me to add weapons to the site this is only for the superuser.
+* Also just for the superuser I tested the edit and delete weapons buttons on the weapons page to make sure I was being firstly directed to the correct form and secondly when the form was submitted the changes were made
+  or the weapon was deleted.
+
+### Known Bugs:
+
+* On smaller mobile devices the shopping bag on the navigation bar is pushed below the rest of the links.
+    - This causes the navigation bar to look bulky and not a very plesent look.
+    - I have already made these links smaller so that on the larger mobile devices they are on the same line i'm afraid that making them even smaller to suit smaller devices will make the links harder to press and may cause users
+      to click other links when trying to press the search bar for example.
