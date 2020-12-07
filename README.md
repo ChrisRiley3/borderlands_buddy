@@ -272,10 +272,12 @@ were no syntax errors.
 * I tested the Manage Weapons page ti make sure it was allowing me to add weapons to the site this is only for the superuser.
 * Also just for the superuser I tested the edit and delete weapons buttons on the weapons page to make sure I was being firstly directed to the correct form and secondly when the form was submitted the changes were made
   or the weapon was deleted.
+* Testing took place on the search bar, searching for specific weapons and making sure only that weapon is brough up. But also searching for manufactures and making sure the correct weapons show.
 
 ### Known Bugs:
 
 * On smaller mobile devices the shopping bag on the navigation bar is pushed below the rest of the links.
-    - This causes the navigation bar to look bulky and not a very plesent look.
+    - This causes the navigation bar to look bulky and gives it a bad look
+    - This also causes there to be no margin at the bottom of the homescreen information box. 
     - I have already made these links smaller so that on the larger mobile devices they are on the same line i'm afraid that making them even smaller to suit smaller devices will make the links harder to press and may cause users
       to click other links when trying to press the search bar for example.

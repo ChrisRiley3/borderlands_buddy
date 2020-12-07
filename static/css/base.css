@@ -362,11 +362,13 @@ hr {
     }
 }
 
+/* Adjusts the font size for smaller devices*/
 @media (max-width: 375px) {
-    .custom-btn1 {
-        font-size: 12px;
-    }
-    .custom-btn2 {
+    .weapon-details-container,
+    .feedback-text,
+    .custom-btn1,
+    .custom-btn2,
+    .bag-table {
         font-size: 12px;
     }
 }
