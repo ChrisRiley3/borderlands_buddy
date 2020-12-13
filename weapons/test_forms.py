@@ -39,4 +39,3 @@ class TestWeaponForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('image_url', form.errors.keys())
         self.assertEqual(form.errors['image_url'][0], 'This field is required.')
-
