@@ -45,11 +45,9 @@ class TestOrderForm(TestCase):
     def test_postcode_is_not_required(self):
         form = OrderForm({'postcode': 'TS6 0RQ'})
         self.assertFalse(form.is_valid())
-    
+
     def test_country_is_required(self):
         form = OrderForm({'country': ''})
         self.assertFalse(form.is_valid())
         self.assertIn('country', form.errors.keys())
         self.assertEqual(form.errors['country'][0], 'This field is required.')
-
-
