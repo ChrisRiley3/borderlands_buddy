@@ -70,7 +70,7 @@ def checkout(request):
                 except Weapon.DoesNotExist:
                     messages.error(request, (
                         "One of the weapons in your bag wasn't found in our database."
-                        "Please call us for assistance!")
+                        "Please email us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))

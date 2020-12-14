@@ -29,7 +29,7 @@ class TestOrderForm(TestCase):
         self.assertEqual(form.errors['street_address1'][0], 'This field is required.')
 
     def test_street_address2_is_not_required(self):
-        form = OrderForm({'street_address2': '2 apple street'})
+        form = OrderForm({'street_address2': ''})
         self.assertFalse(form.is_valid())
 
     def test_town_or_city_is_required(self):
@@ -39,11 +39,11 @@ class TestOrderForm(TestCase):
         self.assertEqual(form.errors['town_or_city'][0], 'This field is required.')
 
     def test_county_is_not_required(self):
-        form = OrderForm({'county': 'teesside'})
+        form = OrderForm({'county': ''})
         self.assertFalse(form.is_valid())
 
     def test_postcode_is_not_required(self):
-        form = OrderForm({'postcode': 'TS6 0RQ'})
+        form = OrderForm({'postcode': ''})
         self.assertFalse(form.is_valid())
 
     def test_country_is_required(self):
