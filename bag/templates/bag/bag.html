@@ -28,7 +28,7 @@
 							<th scope="col">Weapon Info</th>
 							<th scope="col"></th>
 							<th scope="col">Price</th>
-							<th scope="col">Qty</th>
+							<th class="qty" scope="col">Qty</th>
 							<th scope="col">Subtotal</th>
 						</tr>
 					</thead>
@@ -49,7 +49,7 @@
 							<p class="my-0"><strong>${{ item.weapon.price }}</strong></p>
 						</td>
 						<td class="py-3 w-25">
-							<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+							<form class="form update-form qty" method="POST" action="{% url 'adjust_bag' item.item_id %}">
 								{% csrf_token %}
 								<div class="form-group">
 									<div class="input-group">
@@ -76,7 +76,7 @@
 									</div>
 								</div>
 							</form>
-                            <a class="update-link text-info"><strong>Update</strong></a>
+                            <a class="update-link text-info qty"><strong>Update</strong></a>
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><strong>Remove</strong></a>
 						</td>
 						<td class="py-3">

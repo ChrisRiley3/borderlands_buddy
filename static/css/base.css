@@ -360,15 +360,40 @@ hr {
     .main-text {
         margin-top: 25px !important;
     }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .main-header {
+        padding-bottom: 15px;
+    }
+
+    .header-container {
+        padding-top: 90px;
+    }
+
+    .main-text {
+        margin-bottom: 10px !important;
+    }
+
+    .custom-btn1,
+    .custom-btn2 {
+        font-size: 9px !important;
+    }
 }
 
 /* Adjusts the font size for smaller devices*/
-@media (max-width: 375px) {
+@media (max-width: 415px) {
     .weapon-details-container,
     .feedback-text,
     .custom-btn1,
     .custom-btn2,
     .bag-table {
         font-size: 12px;
+    }
+/* Modified display on mobile devices to make the UX better so the screen is not clogged up */
+    .qty {
+        display: none;
     }
 }
