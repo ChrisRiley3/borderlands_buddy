@@ -1,0 +1,1 @@
+web: gunicorn borderlands_buddy.wsgi:application
