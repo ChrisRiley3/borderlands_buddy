@@ -51,6 +51,7 @@ class StripeWH_Handler:
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
+        print('bag webhook handler contains' + bag)
         save_info = intent.metadata.save_info
 
         billing_details = intent.charges.data[0].billing_details
