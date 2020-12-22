@@ -258,6 +258,7 @@ were no syntax errors.
         E. The user will notice that on this page they dont have the ability to delete their review. Being the developer of this site I believe that every review bad or good should be left on the site as the more information
             other users wishing to purchase the weapon have is better for them when making their decision.
 
+
 ### Further Testing:
 
 * The Website was tested on Google Chrome
@@ -274,10 +275,113 @@ were no syntax errors.
   or the weapon was deleted.
 * Testing took place on the search bar, searching for specific weapons and making sure only that weapon is brough up. But also searching for manufactures and making sure the correct weapons show.
 
+
+### Python Testing:
+
+As well as testing Borderlands Buddy as stated above I also used python to test certain files in my project specifically view.py files and form.py files. These tests that I wrote basically test specific parts of 
+functions and make sure they are acting as they should be. To test these functions you would enter the following in the console.
+* python3 manaage.py test - This will test all the test.py files
+* python3 manage.py test checkout.test_forms - This will tests a specific apps test.py file specifically the test_forms.py file, you can change this input depending on the app you are wanting to test and the file you are wanting to
+  to test. For example if you wanted to check the feedback apps view file you would input the following in the console python3 manage.py test feedback.test_views.
+* If you wanted to test a specific app file and that files specific function you would input the following in the console python3 manage.py test checkout.test_forms.TestOrderForm.test_customer_name_is_required.
+  Inputting this in the console will first go to the checkout out apps test_forms.py file find the TestOrderForm class and then find the specific test_customer_name_is_required function and test it.
+
+
 ### Known Bugs:
 
 * On smaller mobile devices the shopping bag on the navigation bar is pushed below the rest of the links.
-    - This causes the navigation bar to look bulky and gives it a bad look
+    - This causes the navigation bar link to look out of place. However this does not show in the developer tool this only shows when you are actually looking on some mobiule devices for example it shows on my iPhone X
+      But not on the iPhone X view in developer tools
     - This also causes there to be no margin at the bottom of the homescreen information box. 
     - I have already made these links smaller so that on the larger mobile devices they are on the same line i'm afraid that making them even smaller to suit smaller devices will make the links harder to press and may cause users
       to click other links when trying to press the search bar for example.
+
+
+# Deployment
+
+### Heroku
+
+The project was deployed to Heroku using the following steps:
+    1. First I logged into my Heroku account and clicked "New" then "Create New App" this then directed me to the Create New App page.
+    2. From here I can give my app a name and then choose the region that is closest to me, now I am ready to click create app.
+    3. I will now be directed to the new apps home page where I have many option to add things like config vars.
+    4. Now on this page I will click resources and go to the Add-ons section. in this box I will provision a new postgres database by searching postgres and clicking Heroku Postgres.
+       I will make sure that I am using the free version and click provision.
+    5. To use postgres I have to navigate back over to my gitpod workspace and install dj_database_url and psycopg2-binary I do this with the following commands in the terminal "pip3 install dj_database_url"
+       and "pip3 install psycopg2-binary"
+    6. Now these are installed I will freeze the requirements by using the command "pip3 freeze requirements.txt" in the terminal window, this will make sure heroku will download all my apps requirements when I deploy it.
+    7. I will get the new database set up by importing dj_database_url in my settings.py file.
+    8. Now still in settings.py I will scroll down to the databases setting and comment out the default configuration and replace it with a call to my dj_database_url
+    9. Going back to heroku I will navigate over to settings and reveal config vars and copy and paste my DATABASE_URL into my new database I just created in my settings.py file.
+    10. With this all saved I am ready to connect to my new heroku databse and run migrations. Because I am now connecting to postgres I need to run all these migrations again, I can see this because if I run the showmigrations command
+        in the console none of my migrations are marked off. So if I run python3 manage.py migrate it will run all those migrations and get the database all set up.
+    11. Now I need to import all my weapons data to do this I will use my fixtures. By running the following commands in the terminal it will load all my weapons data back into the database "python3 manage.py loaddata categories" and then
+        "python3 manage.py loaddata weapons".
+    12. Finally I will need to create a super user to log in with to do this I run the command "python3 manage.py createsuperuser" and fill out the fields that it requires.
+    13. With this finished my heroku app and database are ready to go, however before I commit I am going to remove the heroku database config and uncomment the origional database in my settings.py file. This is so my database url doesnt end
+        up in version control.
+    14. With this done I can now commit and push to github. 
+    15. Now because I have removed the heroku database I need to write an if statement in my settings.py file so that when the app is running on heroku the database is connecting to postgres, otherwise it will connect to sqlite.
+    16. Once I am happy with my if statement I need to install gunicorn in the terminal so my app will work on the first try of deploying it. I done this with the following command "pip3 install gunicorn". Now that it is installed 
+        I need to freeze it in to my requirements file.
+    17. I will now create a procfile by right clicking in my Borderlands Buddy workspace and click create file. The file will be named Procfile, in this file I will tell heroku to create a web dyno which will run gunicorn and serve my django app.
+    18. Now I can log into heroku in the terminal window with the command "heroku login"
+    19. Once logged in I will need to temporarily disable collect static using the command "heroku config:set DISABLE_COLLECTSTATIC=1 --app borderlands-buddy" so that heroku wont try and collect static files when I deploy.
+    20. I will also need to add the host name of my heroku app to allowed hosts in settings.py, I will also add local host in there to so that gitpod will still work.
+    21. With all this saved I will now attempt to deploy my app by adding and committing my changes then push to github. Once it has pushed to github I will need to initialize my heroku git remote with the following command "heroku git:remote -a borderlands-buddy".
+        I can now use the command "git push heroku master". If I have done everything right I will now see a link to my heroku app in the console [https://borderlands-buddy.herokuapp.com/]. When I click on the link it will take me to my deployed site,
+        however there will be no static or media files being loaded this is where I will use amazon web services to store my static and media file and connect them to my heroku app.
+    22. I want to set up automatic deploy in my heroku app when I push to github to do this I will go to heroku app page and navigate to the deploy section, on this page I will go to Deployment Method and set it to github and then search for my
+        repository and click connect. Once its connected I can enable automatic deploys and now everytime I push to github my code will automatically be deployed to heroku.
+    23. Before commiting to heroku I am going to update my secret key in my settings.py file. First I am going to search for a django secret key generator and copy a secret key. Going back to my heroku config vars I will paste this secret key
+        in a var called "SECRET_KEY". Now I can go back to my gitpod workspace settings.py and replace the SECRET_KEY setting with a call to get it from the environment and use a empty string as a default.
+    24. Just under this setting I will set DEBUG to be True only if there is a variable called development in the environment, Now I can commit these changes and push them to github. Navigating over to Heroku and activity I can see there is a build
+        in progress and my automatic deployments are working.
+
+
+### AWS S3
+
+ This is a cloud based storage service that will give me a small piece of amazon's infostructure that I can use to store my static and media files. To set this up I used the following steps:
+    1. To get things started I navigated over to [https://aws.amazon.com/] and signed into my account.
+    2. Once I was signed in I will search for s3 and open it to create a new bucket that will be used to store my static and media files. I clicked create bucket and named it to match my heroku app name to keep things simple. I was now asked to select a region
+       for this I selected the one that was closest to me. I then unticked block all public access and created the bucket.
+    3. I now need to set a few settings on the bucket I just created. First in properties I will turn on Static Website Hosting which will give me a new end point I can use to access it from the internet. For the index and error document I inputted index.html and error.html
+       and saved it.
+    4. Now navigating to the permissions tab I am going to make two changes. First in the CORS configuration I am going to set up the required access between my heroku app and the s3 bucket. Second in the bucket policy tab I am going to click policy generator
+       so I can create a security policy for this bucket. The policy type will be s3 bucket policy, I will allow all principals by inputting * in the field, and the action will be set to get object. Now I will copy the ARN which can be found in the bucket policy tab
+       and paste it in the field required back on the policy generator page. Once this is done I will click add statement then generate policy, then copy the policy it just generated into the bucket policy tab back in my bucket. But before I save it I am going to allow
+       access to all resourses in this bucket by adding /* at the end of the "Resource" key and now I can save. With all this done my bucket is ready.
+    5. With the bucket ready I am going to create a user to access it, to do this I am going to use another service in aws called IAM. The process I am going to use here is to first create a group for a user to live in then create an access policy giving the group
+       access to the s3 bucket I created and finally I will assign a user to the group.
+    6. First I navigate to Groups and create a new group called "manage-borderlands-buddy", now clicking next step and next step again I can click create group.
+    7. Now I can create a policy used to access my bucket by clicking policies and create policy, clicking on the JSON tab I will navigate over to import managed policy which will let me import one that aws has pre-built for full access to s3. I will search for
+       s3 and then import AmazonS3FullAccess. Now I dont want to allow access to everything I just want to allow access to my new bucket and everything within it. To do this I will need to copy the buckets arn from the bucket policy page in s3 and paste it
+       in the resource key back in IAM. I will paste it twice once without /* on the end of it and one with /* on the end of it. With this done I have all s3 actions allowed both on the bucket itself and on everything in it. Now I can click review policy, I will
+       give it a name and a description and click create policy. This will take me back to the policy page where I can see the policy has been created.
+    8. I can now attach the policy to the group I created, I will go to groups and click my manage-borderlands-buddy group, click attach policy and search for the policy I just created and select it and click attach policy.
+    9. Now I will create a user to put in the group, on the users page I will click add user and add a name of borderlands-buddy-staticfiles-user give them programmatic access and click next. Now I can put the user in the group I created, I will
+       select manage-borderlands-buddy and click next till I get to the end and then click create user. Once I have done this I can click download .csv and this will download the users access key and secret access key which I can use to authenticate
+       them from my django app.
+    10. Now its time to connect django to my s3 bucket to do this I will need to navigate back over to gitpod and install two new packages boto3 and django-storages, once they are installed I can freeze them into my requirements.txt so they will be installed 
+        on heroku when I deploy. I also need to add storages to my installed apps in my settings.py file.
+    11. To connect django to s3 I need to add some settings in settings.py to tell django which bucket it should be communicating with.
+    12. With these settings added I will now navigate over to heroku and add my aws keys to my config variables. These are what I downloaded from the .csv file.
+    13. Whilst I am in my vars I am going to remove DISABLE_COLLECTSTATIC beacuse now when I deploy to heroku this time django will collect static file and upload them to s3.
+    14. Back in my settings.py file I will need to tell django where my static files will be coming from in production which will be AWS_S2_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    15. Now I will need to tell django that in production I want to use s3 to store my static files whenever someone runs collect static and I want any uploaded weapon images to go there also. To do this I will create a file called custom_storages.py
+        and import settings from django.conf and also import S3Boto3Storage from storages.backends.s3boto3. I will create a custom class called StaticStorage that will inherit the one from django storages giving it all its functionality, in this class
+        I will tell it I want to store static files in a location from my setting.py. I will repeat this process but this time the class will be called MediaStorage.
+    16. Going back to settings.py I will tell it for static file storage I want to use the storage class I just created and that the location it should save static files should be a folder called static I will repeat this process for media files and tell
+       it to save files to a folder called media.
+    17. I also need to overide and set the URL's for static and media files using my custom doamin and the new locations.
+    18. What will happen now is when my project is deployed to heroku, heroku will run python3 manage.py collectstatic during the build process which will search through all my apps and project folders for static files and it will use the
+        AWS_S3_CUSTOM_DOMAIN setting in conjunction with my custom storage classes that tell it the location at that URL where I would like to save things.
+    19. To make sure this works all I need to do is add all the changes, commit and push to github which will trigger an automatic deployment to heroku. If I navigate over to my s3 bucket I will see a static file in there with all my static files in it.
+    20. Now I have got all my static files working correctly I am going to get all my media files working.
+    21. Navigating over to s3 I am going to create a new folder called Media, opening the media folder I will click upload and then add files and simply select all my project images and click open. Now I will click next and then upload this will
+        upload all my project images into the new media folder I have just created in s3. Now because I havent yet verified my superuser in the admin I will do so otherwise I wont be able to log into my project.
+    22. Finally to finish this off I am going to add my stripe key in my heroku config variables. I can find my stripe keys by loggin in to my stripe account at [https://stripe.com/gb] and navigating over to developers and then api keys.
+    23. Back in stripe I need to setup a new webhook endpoint as the current one is sending webhooks to my gitpod workspace. Once I have done this I will get a webhook signing secret that I can add to my heroku config variables. To test that this is working
+        I will send a test webhook from stripe to make sure my listener is working.
+    24. With all this complete my Borderlands Buddy app is now fully deployed for anyone to see on the internet.
+        
