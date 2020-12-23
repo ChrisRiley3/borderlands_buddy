@@ -383,4 +383,21 @@ This is a cloud based storage service that will give me a small piece of amazon'
 23. Back in stripe I need to setup a new webhook endpoint as the current one is sending webhooks to my gitpod workspace. Once I have done this I will get a webhook signing secret that I can add to my heroku config variables. To test that this is working
     I will send a test webhook from stripe to make sure my listener is working.
 24. With all this complete my Borderlands Buddy app is now fully deployed for anyone to see on the internet.
-        
+
+
+### Emails
+
+To finish my projet off I was able to set up emails so that real emails would be sent to users by using Django, for things like cvreating an account or making a purchase to do this I used the following steps: 
+1.  First I went to [https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp] and this allowed me to create a gmail account.
+2.  Once I creted an account I went to my account settings, then the accounts and import tab and from there I clicked Other Google Account Settings.
+3.  On the screen that I have just loaded up I will go to the secutiry tab, and then in signing into google I am going to turn on 2-step verification.
+4.  Doing this will allow me to create an app password specific to my django app that will allow it to authenticate and use the gmail account I just created to send emails.
+5.  To get this going I will click get started and then enter my passwword and this will ask me to select a verification method ether through a text or email. Once I have selected the verification method that I want a code will get sent out to me and I will enter the
+    code in the field provided. Once it is verified I can click turn on.
+6.  Now under the signing into google heading there is a new field called app passwords, I will go ahead and click it and enter my password again. I will now be directed to the app password page. Where it says select app I will select mail, and in select device I will
+    select other and type in Django. 
+7.  With this done I am given a password which I will copy and head over to my heroku app and enter it as a config variable "EMAIL_HOSST_PASS", I will also need to set another config variable "EMAIL_HOST_USER" which will be set to my gmail account.
+8.  The last step is to add a few setting to settings.py back in gitpod, the first setting I am going to add is a if statement saying if the site is in development then set emails to the console other wise if it is in production then use gmail to send emails.
+9.  To complete this now all i have to do is to add all my changes, commit them and push to github which will trigger an automatic deployment to heroku.
+10. To test this went over to my site and registered a new user. I used a temp email from [https://temp-mail.org/en/] and signed up to borderlands buddy, as expected I recieved an email to this account saying I need to confirm my email clicking on the link provided
+    I was directed to the confirm email page on borderlands buddy showing that emails are now set up and working as expected.
