@@ -401,3 +401,19 @@ To finish my projet off I was able to set up emails so that real emails would be
 9.  To complete this now all i have to do is to add all my changes, commit them and push to github which will trigger an automatic deployment to heroku.
 10. To test this went over to my site and registered a new user. I used a temp email from [https://temp-mail.org/en/] and signed up to borderlands buddy, as expected I recieved an email to this account saying I need to confirm my email clicking on the link provided
     I was directed to the confirm email page on borderlands buddy showing that emails are now set up and working as expected.
+
+# Credit
+
+### Code 
+* [https://getbootstrap.com/] Bootstrap was the library used throughout the project mainly to make the site responsive and to make use of bootstraps grid system.
+* I used JSON files to create my weapons and cateogires data for my database, all this data and information used for weapons was found at [https://www.lootlemon.com/db/borderlands-3/weapons] and [https://borderlands.fandom.com/wiki/Category:Weapons].
+
+### Content
+* All content was written by me the developer else its stated otherwise in the comments sections of certain files.
+
+### Media
+* All the media files for this project were taken from [https://www.lootlemon.com/db/borderlands-3/weapons] and [https://borderlands.fandom.com/wiki/Category:Weapons].
+
+### Acknowledgements
+* I would like to start off by giving all the tutors at code institute a huge thank you for the feedback I recieved when taking on certain parts of this project.
+* I would also like to give a big thank you to my mentor for his continuous support and feedback he has given me also througout the project.
