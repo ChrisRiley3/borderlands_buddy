@@ -31,7 +31,8 @@ def add_feedback(request):
             return redirect('feedback')
             feedbacks.objects.create(feedbacks=feedbacks)
         else:
-            messages.error(request, 'Failed to add feedback. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add feedback. Please ensure the form is valid.')
     else:
         form = FeedbackForm()
     template = 'feedback/add_feedback.html'
@@ -54,7 +55,8 @@ def edit_feedback(request, feedback_id):
             messages.success(request, 'Successfully updated feedback!')
             return redirect('feedback')
         else:
-            messages.error(request, 'Failed to update feedback. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update feedback. Please ensure the form is valid.')
     else:
         form = FeedbackForm(instance=feedback)
         messages.info(request, f'You are editing {feedback.feedback}')

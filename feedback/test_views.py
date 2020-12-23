@@ -2,7 +2,7 @@ from django.test import TestCase
 
 
 class TestViews(TestCase):
-    # Tests to see if the correct template is used when the user is trying to access the feedback page
+    # Tests to see if the correct template is used
     def test_get_feedback_page(self):
         response = self.client.get('/feedback/')
         self.assertEquals(response.status_code, 200)

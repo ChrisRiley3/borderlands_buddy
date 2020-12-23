@@ -11,7 +11,10 @@ from profiles.models import UserProfile
 
 
 def all_weapons(request):
-    """ A view to show all the weapons, including sorting and search queries  """
+    """
+    A view to show all the weapons,
+    including sorting and search queries
+    """
 
     weapons = Weapon.objects.all()
     query = None
@@ -42,7 +45,8 @@ def all_weapons(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('weapons'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -88,7 +92,8 @@ def add_weapon(request):
             messages.success(request, 'Successfully added weapon!')
             return redirect(reverse('weapon_detail', args=[weapon.id]))
         else:
-            messages.error(request, 'Failed to add weapon. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add weapon. Please ensure the form is valid.')
     else:
         form = WeaponForm()
     template = 'weapons/add_weapon.html'
@@ -114,7 +119,8 @@ def edit_weapon(request, weapon_id):
             messages.success(request, 'Successfully updated weapon!')
             return redirect(reverse('weapon_detail', args=[weapon.id]))
         else:
-            messages.error(request, 'Failed to update weapon. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update weapon. Please ensure the form is valid.')
     else:
         form = WeaponForm(instance=weapon)
         messages.info(request, f'You are editing {weapon.name}')
@@ -157,7 +163,8 @@ def add_review(request, weapon_id):
             return redirect(reverse('weapon_detail', args=[weapon.id]))
             reviews.objects.create(reviews=reviews)
         else:
-            messages.error(request, 'Failed to add a review. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add a review. Please ensure the form is valid.')
     else:
         form = ReviewForm()
     template = 'weapons/add_review.html'
@@ -182,7 +189,8 @@ def edit_review(request, review_id, weapon_id):
             messages.success(request, 'Successfully updated review!')
             return redirect(reverse('weapon_detail', args=[weapon.id]))
         else:
-            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update review. Please ensure the form is valid.')
     else:
         form = ReviewForm(instance=review)
         messages.info(request, f'You are editing {weapon.manufacture}')
