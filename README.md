@@ -78,9 +78,9 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 # Features
 
 * Borderlands Buddy is responsive on all device sizes
-* There are interactive elemenbts within the website
+* There are interactive elements within the website
     - Users have the ability to leave feedback on the webpage maybe things they would like to see in the future.
-    - Users have the ability to leave reviews on weapons they have used in game so they can advice other users if that weapon is worth buying.
+    - Users have the ability to leave reviews on weapons they have used in game so they can give advice to other users maybe wanting to purchase that weapon.
     - Users have the ability to purchase weapons they want to use and redeem them in game.
 
 # Technologies Used 
@@ -124,7 +124,7 @@ were no syntax errors.
 
 * First Time Visitor Goals:
 
-    * As a first time visitor, to Borderland Buddy I want to be able to see the site main purpose and to learn more about what the organisation is trying to achieve.
+    * As a first time visitor to Borderland Buddy I want to be able to see the site main purpose and learn more about what the organisation is trying to achieve.
 
         A. The user can obtain this information on the websites homepage which clearly states the sites main purpose and what the organisation is wanting to achieve. 
             All the user has to do is simply navigate to the website and the home page with the information will be the first page that loads up.
@@ -132,11 +132,11 @@ were no syntax errors.
         B. The user is hit with a bright and colourful home page where the purpose of the site is made immediately with some text right next to the games background image.
             In this short paragrpah the users can learn what the site is trying to achieve.
 
-        C. The user has a few different options at this point they can ether click the shop now button that will take them directly the all weapons page of the site. The user
+        C. The user has a few different options at this point they can ether click the shop now button that will take them directly to the all weapons page of the site. The user
             can also use the easy and manageable navigation menu to help them find the weapon they require. If the user knows the exact weapon they are looking for then all they
             have to do is use the search bar and this will take them directly to that weapon where they can use some of the other sites features and purcahse the weapon. However this
             is only if the weapon is in the sites database. With Borderlands 3 literally having  a [billion](https://www.google.com/search?q=how+many+weapons+are+in+borderlands+3&rlz=1C1CHBF_en-GBGB926GB926&oq=how+many+weapons+are+in+border&aqs=chrome.0.0i457j69i57j0j0i22i30l6.6923j1j15&sourceid=chrome&ie=UTF-8)
-            guns, if you dont believe me follow the link and see for yourself. Guns will be constantly be getting added to the database.
+            weapons, if you dont believe me follow the link and see for yourself. Weapons will constantly be getting added to the database.
         
     * As a first time visitor, I want to be able to easyily navigate around the site and find the content I require both on desktop and mobile.
 
@@ -146,7 +146,7 @@ were no syntax errors.
         B. The website's navigation bar is fully responsive so mobile users also have access to every feature on the site.
 
         C. When a user wants to submit some feedback on the site and they do that by submitting the feedback form they are redirected back to the top of the feedback page
-            where they can see what they just submitted and also what other people have submitted to. Notice how they are redirected back to the top of the pay this it to allow
+            where they can see what they just submitted and also what other people have submitted to. Notice how they are redirected back to the top of the page this is to allow
             for easy navigation once again as the nav bar is situated at the top of the page. This applies for any reviews left on a weapons page to. Once the user has submitted
             a review on a weapon they will be redirected back to the top of that weapons page where the nav bar is.
         
@@ -180,46 +180,50 @@ were no syntax errors.
     * As a returning visitor, I want to be able to leave and read feedback on the site with information like what I like about the site and maybe what I would like to see added to the site.
 
         A. If the user is wanting to interact with the organisation and leave feedback on the website then all they have to do is use the navigation menu and navigate over to the feedback
-            page.
+           page.
 
         B. When they click on the feedback button they will be directed to the feedback page where they can see all the other feedback that has been left by other users.
 
-        C. Now if the user wishes they can click the add feedback button where they will be directed again to the add feedback page this is where the user will be requred to fill out a simple
-            form and on submitting that form they will be redirected back to the feedback page where they can now see their feedback has been left for the organisation and other users to read.
+        C. Now if the user wishes they can click the add feedback button where they will be redirected again to the add feedback page this is where the user will be requred to fill out a simple
+           form and on submitting that form they will be redirected back to the feedback page where they can now see their feedback has been left for the organisation and other users to read.
         
     * As a returning visitor, I want to be able to leave and read reviews on weapons that I have bought and used to help other users make that final decision on buying that weapon.
 
         A. The user will have to navigate to a weapon of their choice that they wish to purchase. This step has been covered in the first time visitor section.
 
         B. once a user has navigated to their weapon of choice they will have a few different option on this page. The page contains information about the weapon itself such as its name, 
-            manufacture, Type of weapon, Price and a short paragraph about the weapon. At this point the user can ether choose to keep shopping as it is not the weapon they have been looking for
-            or they can choose to add it to their bag ready to purchase it.
+           manufacture, Type of weapon, Price and a short description about the weapon. At this point the user can ether choose to keep shopping as it is not the weapon they have been looking for
+           or they can choose to add it to their bag ready to purchase it.
 
-        C. The other choice the user has is to navigate to the bottom of that weapons page and this is where the reviews are sitatued. The user can read through other peoples reviews and also
+        C. The other choice the user has is to navigate to the bottom of that weapons page and this is where the reviews are situated. The user can read through other peoples reviews and also
             add reviews themselves.
 
-        D. If a user wishes to leave a review about the weapon to help other users they can click the add review button. When they click this button they will be directed to the add review page.
-            At this point I would like to mention that if a user does want to leave feedback or a review when using the website they must be signed in this is so the organisation can keep track of people
-            leaving reviews and feedback. When the user is on the add review page they will have to fill out a simple form and on submitting this form they will be redirtected back to that weapons page and
-            their review will have been added.
+        D. If a user wishes to leave a review about the weapon to help other users they can click the add review button. When they click this button they will be redirected to the add review page.
+           At this point I would like to mention that if a user does want to leave feedback or a review when using the website they must be signed in this is so the organisation can keep track of people
+           leaving reviews and feedback. When the user is on the add review page they will have to fill out a simple form and on submitting this form they will be redirtected back to that weapons page and
+           their review will have been added.
         
     * As a returning visitor, I want to be able to purchase weapons of my choice.
 
         A. Users will be able to purchase a weapon of their choice by navigating to the weapon they wish to purchase and clicking the add to basket button.
 
         B. When clicking this button they will be hit with a notification with a go to secure checkout button. If the user continues to press this button they
-            they will be directed to the shopping bag page.
+           will be directed to the shopping bag page.
 
-        C. On this page the user will have a few different choices. If the user decides they dont just want one of that weapon then they can update the quantity on this page with the price also
-            being automatically updated for them.
+        C. On this page the user will have a few different choices. If the user decides they want two of that weapon then they can update the quantity on this page with the price also
+           being automatically updated for them.
 
         D. What if the user changes their mind and decides they dont want that weapon at all then also on this page the user has the option to remove that weapon from their basket. On clicking remove
-            the basket will be updated.
+           the basket will be updated.
 
         E. If the user decides everything is correct with the order and they wish to purchase the order then they can click the secure checkout button. On this page the user will be required to fill out
-            a billing details form, this form is simple to fill out and if the user has already filled this form out in their profile the form will be automatically generated for them all they will be required to do
-            is fill out the payment details and add their name. Once the user is happy that the form is correct they can click the complete order button which will direct them to a checkout success page
-            with all the details that the user requires to redeem their weapon or weapons. Once the order has went through and the user is on this page they can navigate round the website again.
+           a billing details form, this form is simple to fill out and if the user has already filled this form out in their profile the form will be automatically generated for them all they will be required to do
+           is fill out the payment details and add their name. Once the user is happy that the form is correct they can click the complete order button which will direct them to a checkout success page
+           with all the details that the user requires to redeem their weapon or weapons. Once the order has went through and the user is on this page they can navigate round the website again.
+        
+        F. As stripe is not set up to take real payments, when filling out the card details field you should follow the stripre documentation to complete the order by entering a mock card number 
+           (Stripe Docs)[https://stripe.com/docs/payments/accept-a-payment?integration=elements]. That card number as stated in the docs is "4242 4242 4242 4242". You should now enter a future date for card expiry, 
+           a 3 digit number for CVC and a ZIP.
         
 * Frequent User Goals:
 
@@ -234,13 +238,13 @@ were no syntax errors.
         A. If a user wants to make changes or even delete the feedback that they have left then they will first have to sign into their account.
 
         B. Once the user is signed in to their account they will then navigate over to the feedback section. On this page they will be able to see all the feedback they have left
-            and other users have left.
+           and other users have left.
 
-        C. The user will notice that only on the feedback that they have left they can edit and delete. They will be unable to edit and delete everyones feedback.
+        C. The user will notice that only on the feedback that they have left they can edit and delete. They will be unable to edit and delete anyone elses feedback.
 
         E. If the user wishes to edit the feedback they have left then they would click the edit button situated at the bottom of the feedback they left. When this button is clicked
-            the user will be redirected to a edit feedback page where their old feedback form will be loaded up. At this point the user can edit what they wish and then click submit.
-            Once the user has submitted the form they will be redirected back to the feedback page where they can see their edited feedback.
+           the user will be redirected to a edit feedback page where their old feedback form will be loaded up. At this point the user can edit what they wish and then click submit.
+           Once the user has submitted the form they will be redirected back to the feedback page where they can see their edited feedback.
             
         F. If the user decides that they wish to delete the feedback completely then all they have to do is click the delete button and the feedback will be no more.
         
@@ -249,15 +253,15 @@ were no syntax errors.
         A. If the user has left a review on a weapon and then later decides that they wish to edit this review then first they must make sure they are signed in on the account that they left the review on.
 
         B. Once they are happy they are on that accont they will then navigate to the weapon they left the review on and they will notice that only the reviews that they have left have a edit button next to them.
-            This is so a user can't just go and edit anyones review.
+           This is so a user can't just go and edit anyones review.
 
         C. When the user has found the review they wish to edit they can click the edit button which will direct them to the edit review page. Once on this page the user will see the form that they previously filled out
-            with all the previous information in it. They can edit what they need and then submit the form.
+           with all the previous information in it. They can edit what they need and then submit the form.
             
         D. Once the form is submitted by click the edit review button the user will be redirected back to that weapons page where they will see their edited review.
 
         E. The user will notice that on this page they dont have the ability to delete their review. Being the developer of this site I believe that every review bad or good should be left on the site as the more information
-            other users wishing to purchase the weapon have is better for them when making their decision.
+           other users wishing to purchase the weapon have is better for them when making their decision.
 
 
 ### Further Testing:
@@ -271,7 +275,7 @@ were no syntax errors.
 * The same amount of testing went into the review page to make sure users could only edit their own reviews.
 * I had Code Institute tutors sign up to the site and got them to submit a review or feedback or make a purchase to make sure this was all working correctly.
 * Friends and family were also asked to sign up to the site to help point out some bugs and any user experience issues.
-* I tested the Manage Weapons page ti make sure it was allowing me to add weapons to the site this is only for the superuser.
+* I tested the Manage Weapons page to make sure it was allowing me to add weapons to the site this is only for the superuser.
 * Also just for the superuser I tested the edit and delete weapons buttons on the weapons page to make sure I was being firstly directed to the correct form and secondly when the form was submitted the changes were made
   or the weapon was deleted.
 * Testing took place on the search bar, searching for specific weapons and making sure only that weapon is brough up. But also searching for manufactures and making sure the correct weapons show.
@@ -281,9 +285,9 @@ were no syntax errors.
 
 As well as testing Borderlands Buddy as stated above I also used python to test certain files in my project specifically view.py files and form.py files. These tests that I wrote basically test specific parts of 
 functions and make sure they are acting as they should be. To test these functions you would enter the following in the console.
-* python3 manaage.py test - This will test all the test.py files
-* python3 manage.py test checkout.test_forms - This will tests a specific apps test.py file specifically the test_forms.py file, you can change this input depending on the app you are wanting to test and the file you are wanting to
-  to test. For example if you wanted to check the feedback apps view file you would input the following in the console python3 manage.py test feedback.test_views.
+* python3 manage.py test - This will test all the test.py files
+* python3 manage.py test checkout.test_forms - This will test a specific apps test file specifically the test_forms.py file, you can change this input depending on the app you are wanting to test and the 
+  file you are wanting to test. For example if you wanted to check the feedback apps view file you would input the following in the console python3 manage.py test feedback.test_views.
 * If you wanted to test a specific app file and that files specific function you would input the following in the console python3 manage.py test checkout.test_forms.TestOrderForm.test_customer_name_is_required.
   Inputting this in the console will first go to the checkout out apps test_forms.py file find the TestOrderForm class and then find the specific test_customer_name_is_required function and test it.
 
@@ -291,11 +295,13 @@ functions and make sure they are acting as they should be. To test these functio
 ### Known Bugs:
 
 * On smaller mobile devices the shopping bag on the navigation bar is pushed below the rest of the links.
-    - This causes the navigation bar link to look out of place. However this does not show in the developer tool this only shows when you are actually looking on some mobiule devices for example it shows on my iPhone X
+    - This causes the navigation bar link to look out of place. However this does not show in the developer tool this only shows when you are actually looking on some mobile devices for example it shows on my actual iPhone X
       But not on the iPhone X view in developer tools
     - This also causes there to be no margin at the bottom of the homescreen information box. 
     - I have already made these links smaller so that on the larger mobile devices they are on the same line i'm afraid that making them even smaller to suit smaller devices will make the links harder to press and may cause users
       to click other links when trying to press the search bar for example.
+
+* Also on the weapons detail page where there are no reviews on a weapon a box is being rendered ready to be populated with reviews. 
 
 
 # Deployment
@@ -388,26 +394,29 @@ This is a cloud based storage service that will give me a small piece of amazon'
 
 ### Emails
 
-To finish my projet off I was able to set up emails so that real emails would be sent to users by using Django, for things like cvreating an account or making a purchase to do this I used the following steps: 
+To finish my projet off I was able to set up emails so that real emails would be sent to users by using Django, for things like creating an account or making a purchase to do this I used the following steps: 
 1.  First I went to [https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp] and this allowed me to create a gmail account.
 2.  Once I creted an account I went to my account settings, then the accounts and import tab and from there I clicked Other Google Account Settings.
 3.  On the screen that I have just loaded up I will go to the secutiry tab, and then in signing into google I am going to turn on 2-step verification.
 4.  Doing this will allow me to create an app password specific to my django app that will allow it to authenticate and use the gmail account I just created to send emails.
-5.  To get this going I will click get started and then enter my passwword and this will ask me to select a verification method ether through a text or email. Once I have selected the verification method that I want a code will get sent out to me and I will enter the
-    code in the field provided. Once it is verified I can click turn on.
-6.  Now under the signing into google heading there is a new field called app passwords, I will go ahead and click it and enter my password again. I will now be directed to the app password page. Where it says select app I will select mail, and in select device I will
-    select other and type in Django. 
-7.  With this done I am given a password which I will copy and head over to my heroku app and enter it as a config variable "EMAIL_HOSST_PASS", I will also need to set another config variable "EMAIL_HOST_USER" which will be set to my gmail account.
-8.  The last step is to add a few setting to settings.py back in gitpod, the first setting I am going to add is a if statement saying if the site is in development then set emails to the console other wise if it is in production then use gmail to send emails.
-9.  To complete this now all i have to do is to add all my changes, commit them and push to github which will trigger an automatic deployment to heroku.
-10. To test this went over to my site and registered a new user. I used a temp email from [https://temp-mail.org/en/] and signed up to borderlands buddy, as expected I recieved an email to this account saying I need to confirm my email clicking on the link provided
-    I was directed to the confirm email page on borderlands buddy showing that emails are now set up and working as expected.
+5.  To get this going I will click get started and then enter my passwword and this will ask me to select a verification method ether through a text or email. Once I have selected the verification method that  
+    I want a code will get sent out to me and I will enter the code in the field provided. Once it is verified I can click turn on.
+6.  Now under the signing into google heading there is a new field called app passwords, I will go ahead and click it and enter my password again. I will now be directed to the app password page. Where it says 
+    select app I will select mail, and in select device I will select other and type in Django. 
+7.  With this done I am given a password which I will copy and head over to my heroku app and enter it as a config variable "EMAIL_HOSST_PASS", I will also need to set another config variable "EMAIL_HOST_USER" 
+    which will be set to my gmail account.
+8.  The last step is to add a few setting to settings.py back in gitpod, the first setting I am going to add is a if statement saying if the site is in development then set emails to the console other wise if it 
+    is in production then use gmail to send emails.
+9.  To complete this now all I have to do is to add all my changes, commit them and push to github which will trigger an automatic deployment to heroku.
+10. To test this I went over to my site and registered a new user. I used a temp email from [https://temp-mail.org/en/] and signed up to borderlands buddy, as expected I recieved an email to this account saying 
+    I need to confirm my email, clicking on the link provided I was directed to the confirm email page on borderlands buddy showing that emails are now set up and working as expected.
 
 # Credit
 
 ### Code 
 * [https://getbootstrap.com/] Bootstrap was the library used throughout the project mainly to make the site responsive and to make use of bootstraps grid system.
-* I used JSON files to create my weapons and cateogires data for my database, all this data and information used for weapons was found at [https://www.lootlemon.com/db/borderlands-3/weapons] and [https://borderlands.fandom.com/wiki/Category:Weapons].
+* I used JSON files to create my weapons and cateogires data for my database, all this data and information used for weapons was found at [https://www.lootlemon.com/db/borderlands-3/weapons] 
+  and [https://borderlands.fandom.com/wiki/Category:Weapons].
 
 ### Content
 * All content was written by me the developer else its stated otherwise in the comments sections of certain files.
