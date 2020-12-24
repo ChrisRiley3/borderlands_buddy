@@ -21,7 +21,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     D. As a first time visitor, I want to be able to search for specific weapons by using a search bar so I dont have to search for the weapon manually saving time.
 
     E. As a first time visitor, Once I have signed up I want to be able to view my profile to edit information about my billing address so I am not having to enter it every time I
-        want to buy a weapon.
+       want to buy a weapon.
 
 * Returning Visitor Goals:
 
@@ -38,6 +38,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     A. As a frequent user, I want to see more new weapons added.
         
     B. As a frequent user, I want to be able to edit and delete the feedback that I have left on the website.
+
     C. As a frequent user, I want to be able to edit reviews that I have left on weapons.
         
 
@@ -46,7 +47,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
 * Colour Scheme: 
 
     - The game is a very bright game. So I have matched the website to the games background image using bright orange for the navigation bar, some button backgrounds and weapon information
-        backgrounds. Black for the text on the website, also blue and red to match buttons up to what they will do. For example removing a item from your basket will be a red and 
+        backgrounds. Black for the text on the website, also blue and red to match buttons up to what they will do. For example removing a item from your basket will be red and 
         updating will be blue. The reason I chose these colours blue and red is because most site will stick with these colours when doing the same thing so to keep a user from getting confused
         I will keep them the same. 
 
@@ -67,7 +68,7 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
     - The main background image is designed to be striking and crisp to catch the users eye and make them attracted to the site so they want to browse it.
 
     - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
-        The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
+      The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
 
 ### Wireframes
 
