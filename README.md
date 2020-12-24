@@ -224,7 +224,7 @@ were no syntax errors.
            with all the details that the user requires to redeem their weapon or weapons. Once the order has went through and the user is on this page they can navigate round the website again.
         
         F. As stripe is not set up to take real payments, when filling out the card details field you should follow the stripre documentation to complete the order by entering a mock card number 
-           (Stripe Docs)[https://stripe.com/docs/payments/accept-a-payment?integration=elements]. That card number as stated in the docs is "4242 4242 4242 4242". You should now enter a future date for card expiry, 
+           [Stripe Docs](https://stripe.com/docs/payments/accept-a-payment?integration=elements). That card number as stated in the docs is "4242 4242 4242 4242". You should now enter a future date for card expiry, 
            a 3 digit number for CVC and a ZIP.
         
 * Frequent User Goals:
