@@ -67,13 +67,13 @@ for hours doesnt guarantee them the weapon they want, so they can also sign up t
           
     - The main background image is designed to be striking and crisp to catch the users eye and make them attracted to the site so they want to browse it.
 
-    - When the users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
+    - When users are browsing the site for weapons they will see all the weapons images are formatted the same to make it look professional and yet again to catch the eye of the user.
       The weapons images all have a dark background and the weapons themselves are all bright making them look very sharpe and crisp to the user.
 
 ### Wireframes
 
-* Desktop Wireframes - 
-* Mobile Wireframes -
+* Desktop Wireframes - [https://github.com/ChrisRiley3/borderlands_buddy/blob/master/Wireframes/Desktop%20View.pdf]
+* Mobile Wireframes - [https://github.com/ChrisRiley3/borderlands_buddy/blob/master/Wireframes/Mobile%20View.pdf]
 
 # Features
 
