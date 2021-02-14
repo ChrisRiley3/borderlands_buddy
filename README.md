@@ -63,7 +63,7 @@ Deployed Website link: [https://borderlands-buddy.herokuapp.com/]
     - The text on the site is also bold so the user wont have trouble reading it. With the background being bright if the text wasnt bold it would be faint and some users may struggle to see
         what they are trying to read.
     
-* Imagery
+* Images
 
     - The images used on the site are all saved in the media folder and are visible on the site by using JSON data. these JSON files can be found in weapons/fixtures/weapons.json
           
